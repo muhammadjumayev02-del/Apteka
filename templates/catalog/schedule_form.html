@@ -1,0 +1,5 @@
+{% extends 'base.html' %}{% load i18n %}{% block content %}
+<a href="{% url 'catalog:shifts' %}">{% translate "← Smenalar" %}</a><h1>{% translate "Ish jadvalini belgilash" %}</h1>
+<p>{% translate "Boshlanish va tugash sanasi hamda vaqtini Toshkent vaqti bilan kiriting. Tungi smena uchun tugash sanasini keyingi kun qilib belgilang." %}</p>
+<form method="post" class="panel">{% csrf_token %}{% include 'catalog/form_fields.html' %}<button class="button">{% translate "Saqlash" %}</button></form>
+{% endblock %}

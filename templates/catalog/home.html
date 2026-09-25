@@ -1,0 +1,17 @@
+{% extends 'base.html' %}{% load i18n %}
+{% block content %}
+<section class="hero">
+  {% if request.GET.amal == "sotuv" %}<p class="notice">{% translate "Sotuv qilish: dorini qidiring va uning «Sotuv qilish» tugmasini bosing." %}</p>{% endif %}<p class="eyebrow">{% translate "DORILAR KATALOGI" %}</p>
+  <h1>{% translate "Dorini toping." %}<br><span>{% translate "Joyini darhol biling." %}</span></h1>
+  <p class="muted">{% translate "Savdo nomi, faol modda yoki muqobil nom bo‘yicha qidiring — lotin va kirill yozuvida." %}</p>
+  <form id="search-form" class="search" method="get" action="{% url 'catalog:home' %}" role="search">
+    <label class="sr-only" for="query">{% translate "Dori nomi yoki faol modda" %}</label>
+    <span aria-hidden="true">⌕</span>
+    <input id="query" name="q" value="{{ q }}" maxlength="180" placeholder="{% translate "Dori nomini yozing…" %}" autocomplete="off" autofocus>
+    <button class="button" type="submit">{% translate "Qidirish" %}</button>
+  </form>
+  <p class="search-hint">{% translate "Nomining bir qismini yozish kifoya · Natijalar yozganingizda yangilanadi" %}</p>
+</section>
+<p id="search-status" data-loading="{% translate 'Qidirilmoqda…' %}" data-updated="{% translate 'Natijalar yangilandi.' %}" data-error="{% translate 'Qidiruv yangilanmadi. Qayta urinib ko‘ring yoki Qidirish tugmasini bosing.' %}" class="muted" role="status" aria-live="polite"></p>
+<section id="results" aria-label="{% translate "Qidiruv natijalari" %}">{% include 'catalog/results.html' %}</section>
+{% endblock %}

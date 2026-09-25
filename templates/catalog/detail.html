@@ -1,0 +1,26 @@
+{% extends 'base.html' %}{% load i18n %}
+{% block title %}{{ medicine.name }} {% translate "· Apteka" %}{% endblock %}
+{% block content %}
+<a class="back" href="{% url 'catalog:home' %}">{% translate "← Qidiruvga qaytish" %}</a>
+{% if medicine.is_demo %}<p class="demo-banner">{% translate "XAYOLIY NAMUNA. Bu haqiqiy dori emas; nomi, dozasi va narxi faqat saytni sinash uchun." %}</p>{% endif %}
+<div class="detail-heading"><div><p class="eyebrow">{% translate "DORI MA’LUMOTLARI" %}</p><h1>{{ medicine.name }}</h1><p class="muted">{{ medicine.dosage }} · {{ medicine.form }} · {{ medicine.package_size|default:_("Qadoq hajmi kiritilmagan") }}</p></div>
+{% if user.is_superuser %}<a class="button secondary" href="{% url 'catalog:edit' medicine.pk %}">{% translate "Tahrirlash" %}</a>{% endif %}</div>
+<p><a class="button" href="{% url 'catalog:sell' medicine.pk %}">{% translate "Sotish" %}</a>
+<a class="button secondary" href="{% url 'catalog:locations' medicine.pk %}">{% translate "Qayerda turibdi?" %}</a>
+{% if user.is_superuser %}<a class="button secondary" href="{% url 'catalog:transfer' medicine.pk %}">{% translate "Polkalar orasida ko‘chirish" %}</a>{% endif %}</p>
+<div class="detail-grid">
+  <section class="location-panel"><p class="eyebrow">{% translate "APTEKADAGI JOYLASHUVI" %}</p><h2>{% translate "Qayerdan topish mumkin?" %}</h2>
+    {% for place in medicine.placements.all %}{% if place.quantity %}<div class="location"><strong>{{ place.department }} → {{ place.shelf }}{% translate "-polka →" %} {{ place.row }}{% translate "-qator" %}</strong><span>{{ place.quantity }} {% translate "pachka" %}{% if not place.quantity %} {% translate "· Bu joyda qolmagan" %}{% endif %}</span></div>{% endif %}{% empty %}<p>{% translate "Joylashuv hali kiritilmagan." %}</p>{% endfor %}
+  </section>
+  <section class="panel summary"><p class="muted">{% translate "Bir pachka narxi" %}</p><h2>{{ medicine.price|floatformat:2 }} <small>{% translate "so‘m" %}</small></h2><hr><p class="muted">{% translate "Jami mavjud" %}</p><strong class="total">{{ medicine.total }} {% translate "pachka" %}</strong>{% if not medicine.total %}<p>{% translate "Hozir omborda mavjud emas." %}</p>{% endif %}</section>
+</div>
+<section class="panel clinical">
+  <h2>{% translate "Yo‘riqnoma ma’lumotlari" %}</h2>
+  <h3>{% translate "Tarkibi / faol moddalar" %}</h3><div>{{ medicine.active_ingredients|default:_("Rasmiy ma’lumot hali kiritilmagan.")|linebreaksbr }}</div>
+  <h3>{% translate "Qo‘llanish holatlari" %}</h3><div>{{ medicine.indications|default:_("Rasmiy ma’lumot hali kiritilmagan.")|linebreaksbr }}</div>
+  <hr><p><strong>{% translate "Manba:" %}</strong> {{ medicine.source|default:_("Kiritilmagan")|linebreaksbr }}</p>
+  <p><strong>{% translate "Tibbiy ma’lumot tekshirilgan sana:" %}</strong> {{ medicine.reviewed_on|date:'d.m.Y'|default:_("Kiritilmagan") }}</p>
+  <p class="muted">{% translate "Oxirgi yangilanish:" %} {{ medicine.updated_at|date:'d.m.Y H:i' }}</p>
+</section>
+<p class="notice">{% translate "Qo‘llashdan oldin rasmiy yo‘riqnoma va mutaxassis tavsiyasiga amal qiling" %}</p>
+{% endblock %}

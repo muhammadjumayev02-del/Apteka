@@ -1,0 +1,37 @@
+{% extends 'admin/base_site.html' %}{% load i18n %}
+{% block content_title %}{% endblock %}
+{% block breadcrumbs %}{% endblock %}
+{% block title %}{% translate "Admin panel · Apteka" %}{% endblock %}
+{% block content %}
+<section class="hero dashboard-heading"><p class="eyebrow">{% translate "APTEKA EGASI UCHUN" %}</p><h1>{% translate "Admin panel" %}</h1><p class="muted">{{ today|date:'d.m.Y' }} {% translate "· Toshkent vaqti bilan" %}</p></section>
+
+
+<h2 id="hisobotlar">{% translate "Bugungi sotuv natijalari" %}</h2><p class="muted">{% translate "Bekor qilingan sotuvlar barcha ko‘rsatkichlardan chiqarilgan." %}</p>
+<div class="dashboard-stats">
+<section class="panel"><h3>{% translate "Sotuvlar" %}</h3><strong class="metric">{{ totals.count }}</strong><span>{% blocktranslate count count=totals.count %}ta sotuv{% plural %}ta sotuv{% endblocktranslate %}</span></section>
+<section class="panel"><h3>{% translate "Sotilgan pachkalar" %}</h3><strong class="metric">{{ totals.packages }}</strong><span>{% translate "pachka" %}</span></section>
+<section class="panel"><h3>{% translate "Jami tushum" %}</h3><strong class="metric">{{ totals.revenue|floatformat:2 }}</strong><span>{% translate "so‘m" %}</span></section>
+</div>
+{% if not totals.count %}<p class="muted">{% translate "Bugun hali tasdiqlangan, bekor qilinmagan sotuv yo‘q." %}</p>{% endif %}
+<div class="dashboard-grid">
+<section class="panel dashboard-danger"><h2>{% translate "Muddati o‘tgan partiyalar" %}</h2><p>{% translate "Quyidagi partiyalarning yaroqlilik muddati o‘tgan. Faqat qoldig‘i bor partiyalar." %}</p>
+{% for batch in expired_batches %}<div class="dashboard-row"><strong><a href="{% url 'admin:catalog_batch_change' batch.pk %}">{{ batch.medicine }} · {{ batch.number }}</a></strong><span class="status-danger">{% translate "MUDDATI O‘TGAN ·" %} {{ batch.expires_on|date:'d.m.Y' }}</span><span>{{ batch.stock }} {% translate "pachka" %}</span></div>{% empty %}<p class="muted">{% translate "Qoldig‘i bor muddati o‘tgan partiyalar yo‘q." %}</p>{% endfor %}</section>
+<section class="panel"><h2>{% translate "Muddati yaqinlashayotgan partiyalar" %}</h2><p class="muted">{% blocktranslate %}Bugun va keyingi {{ expiry_days }} kun ichida. Faqat qoldig‘i bor partiyalar.{% endblocktranslate %}</p>
+{% for batch in expiring_batches %}<div class="dashboard-row"><strong><a href="{% url 'admin:catalog_batch_change' batch.pk %}">{{ batch.medicine }} · {{ batch.number }}</a></strong><span>{{ batch.expires_on|date:'d.m.Y' }} · {{ batch.stock }} {% translate "pachka" %}</span></div>{% empty %}<p class="muted">{% translate "Muddati yaqinlashayotgan partiyalar yo‘q." %}</p>{% endfor %}
+{% if unknown_expiry_count %}<p class="notice">{% blocktranslate %}{{ unknown_expiry_count }} ta qoldig‘i bor partiyada yaroqlilik sanasi kiritilmagan.{% endblocktranslate %} <a href="{% url 'admin:catalog_batch_changelist' %}?expires_on__isnull=True">{% translate "Partiyalarni tekshirish" %}</a></p>{% endif %}</section>
+<section class="panel"><h2>{% translate "Kam qolgan dorilar" %}</h2><p class="muted">{% blocktranslate %}Barcha joylardagi jami qoldiq {{ threshold }} pachkadan kam.{% endblocktranslate %}</p>
+{% for medicine in low_stock %}<div class="dashboard-row"><strong><a href="{% url 'admin:catalog_medicine_change' medicine.pk %}">{{ medicine }}</a></strong><span>{{ medicine.stock }} {% translate "pachka ·" %} <a href="{% url 'admin:catalog_medicine_change' medicine.pk %}">{% translate "Qoldiqni tahrirlash" %}</a></span></div>{% empty %}<p class="muted">{% translate "Belgilangan chegaradan kam qolgan dorilar yo‘q." %}</p>{% endfor %}</section>
+<section class="panel"><h2>{% translate "Bugun eng ko‘p sotilgan dorilar" %}</h2><p class="muted">{% translate "Pachkalar soni bo‘yicha birinchi 5 ta dori." %}</p>
+{% for medicine in top_medicines %}<div class="dashboard-row"><strong><a href="{% url 'admin:catalog_medicine_change' medicine.placement__medicine_id %}">{{ medicine.placement__medicine__name }} · {{ medicine.placement__medicine__dosage }}</a></strong><span>{{ medicine.packages }} {% translate "pachka ·" %} {{ medicine.revenue|floatformat:2 }} {% translate "so‘m" %}</span></div>{% empty %}<p class="muted">{% translate "Bugungi sotuvlar hali yo‘q." %}</p>{% endfor %}</section>
+</div>
+<section class="panel"><div class="section-heading"><h2>{% translate "Bugungi xodimlar smenalari" %}</h2><a href="{% url 'admin:catalog_shift_changelist' %}">{% translate "Barcha smenalar" %}</a></div><p class="muted">{% translate "Bugunga to‘g‘ri keladigan rejalar va haqiqiy smenalar, jumladan davom etayotgan tungi smenalar." %}</p>
+<div class="dashboard-grid">
+{% for row in shift_rows %}<article class="shift-card"><h3>{{ row.user.get_full_name|default:row.user.username }}</h3><p class="pill">{{ row.status }}</p>
+<p><strong>{% translate "Reja:" %}</strong> {% if row.schedule %}{{ row.schedule.planned_start|date:'d.m.Y H:i' }} — {{ row.schedule.planned_end|date:'d.m.Y H:i' }}{% else %}{% translate "Jadvaldan tashqari" %}{% endif %}</p>
+<p><strong>{% translate "Haqiqiy boshlanish:" %}</strong> {{ row.shift.started_at|date:'d.m.Y H:i'|default:_("Hali boshlanmagan") }}</p>
+<p><strong>{% translate "Haqiqiy yakun:" %}</strong> {{ row.shift.ended_at|date:'d.m.Y H:i'|default:'—' }}</p>
+{% if row.shift %}<p>{% translate "Ishlagan vaqt:" %} {{ row.shift.worked_time }}</p><a href="{% url 'catalog:shift_detail' row.shift.pk %}">{% translate "Smena sotuvlarini ko‘rish →" %}</a>{% endif %}</article>{% empty %}<p class="muted">{% translate "Bugun uchun jadval yoki haqiqiy smena yo‘q." %}</p>{% endfor %}
+</div></section>
+<section class="panel"><h2>{% translate "So‘nggi sotuvlar" %}</h2><p class="muted">{% translate "Barcha kunlar bo‘yicha oxirgi 10 ta sotuv. Bekor qilinganlari alohida belgilangan." %}</p>
+{% for sale in recent_sales %}<div class="dashboard-row"><strong>{{ sale.name }} · {{ sale.dosage }}</strong><span>{{ sale.quantity }} {% translate "pachka ·" %} {{ sale.total|floatformat:2 }} {% translate "so‘m" %}</span><span>{{ sale.created_at|date:'d.m.Y H:i' }} · {{ sale.shift.user.username }} · <a href="{% url 'catalog:shift_detail' sale.shift_id %}">{% translate "Smena tafsilotlari" %}</a></span>{% if sale.cancelled_at %}<span class="status-danger">{% translate "Bekor qilingan — tushumga kiritilmagan" %}</span>{% else %}<span class="muted">{% translate "Tasdiqlangan" %}</span>{% endif %}</div>{% empty %}<p class="muted">{% translate "Hali sotuvlar yo‘q." %}</p>{% endfor %}</section>
+{% endblock %}

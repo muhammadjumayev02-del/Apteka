@@ -1,0 +1,5 @@
+{% extends 'base.html' %}{% load i18n %}{% block content %}
+<a class="back" href="{% url 'catalog:shift_detail' sale.shift_id %}">{% translate "← Smena sotuvlariga qaytish" %}</a>
+<h1>{% translate "Sotuvni bekor qilasizmi?" %}</h1><section class="panel"><h2>{{ sale.name }}</h2><p>{{ sale.quantity }} {% translate "pachka ·" %} {{ sale.total|floatformat:2 }} {% translate "so‘m" %}</p>
+<p>{% translate "Tasdiqlasangiz, pachkalar oldingi joyiga qaytariladi va bu sotuv tushumdan chiqariladi." %}</p>
+<form method="post">{% csrf_token %}<button class="button">{% translate "Ha, sotuvni bekor qilish" %}</button> <a class="button secondary" href="{% url 'catalog:shift_detail' sale.shift_id %}">{% translate "Yo‘q, qaytish" %}</a></form></section>{% endblock %}

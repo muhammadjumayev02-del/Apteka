@@ -1,0 +1,59 @@
+# Apteka Uzbek interface and Django translation overrides.
+
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\nLanguage: uz\nPlural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Choose %s by selecting them and then select the \"Choose\" arrow button."
+msgstr "%sni belgilang va “Tanlash” strelkasini bosing."
+
+msgid "Choose all %s"
+msgstr "Barcha %sni tanlash"
+
+msgid "Choose selected %s"
+msgstr "Belgilangan %sni tanlash"
+
+msgid "Remove selected %s"
+msgstr "Belgilangan %sni olib tashlash"
+
+msgid "Remove %s by selecting them and then select the \"Remove\" arrow button."
+msgstr "%sni belgilang va “Olib tashlash” strelkasini bosing."
+
+msgid "Type into this box to filter down the list of selected %s."
+msgstr "Tanlangan %s ro‘yxatini filtrlash uchun shu maydonga yozing."
+
+msgid "(click to clear)"
+msgstr "(tozalash uchun bosing)"
+
+msgid "Remove all %s"
+msgstr "Barcha %sni olib tashlash"
+
+msgid "%s selected option not visible"
+msgid_plural "%s selected options not visible"
+msgstr[0] "Tanlangan %s ta variant ko‘rinmayapti"
+
+msgid "You have selected an action, but you haven’t saved your changes to individual fields yet. Please click OK to save. You’ll need to re-run the action."
+msgstr "Amal tanlangan, ammo maydonlardagi o‘zgarishlar saqlanmagan. Saqlash uchun tasdiqlang, keyin amalni yana bajaring."
+
+msgid "You have selected an action, and you haven’t made any changes on individual fields. You’re probably looking for the Go button rather than the Save button."
+msgstr "Amal tanlangan, maydonlar o‘zgartirilmagan. Amalni bajarish uchun “Bajarish” tugmasini bosing."
+
+msgid "Sunday"
+msgstr "Yakshanba"
+
+msgid "Monday"
+msgstr "Dushanba"
+
+msgid "Tuesday"
+msgstr "Seshanba"
+
+msgid "Wednesday"
+msgstr "Chorshanba"
+
+msgid "Thursday"
+msgstr "Payshanba"
+
+msgid "Friday"
+msgstr "Juma"
+
+msgid "Saturday"
+msgstr "Shanba"

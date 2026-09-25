@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% load i18n %}
+{% block content %}<section class="panel"><h1>{% translate "Ruxsat yetarli emas" %}</h1><p>{% translate "Kerakli xodim guruhiga qo‘shish uchun administratorga murojaat qiling." %}</p><a href="{% url 'catalog:home' %}">{% translate "Bosh sahifaga qaytish" %}</a></section>{% endblock %}

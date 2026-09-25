@@ -1,0 +1,16 @@
+{% extends 'base.html' %}{% load i18n %}
+{% block content %}
+<a class="back" href="{% url 'catalog:home' %}">{% translate "← Katalogga qaytish" %}</a>
+<p class="eyebrow">{% translate "VAKOLATLI XODIM" %}</p><h1>{% if medicine.pk %}{% translate "Dorini tahrirlash" %}{% else %}{% translate "Dori qo‘shish" %}{% endif %}</h1>
+<p class="notice">{% translate "Tarkib va qo‘llanishni faqat rasmiy yo‘riqnomadan kiriting. Manba va tekshirilgan sanani ko‘rsating." %}</p>
+<form method="post" class="editor">{% csrf_token %}
+  <section class="panel"><h2>{% translate "Asosiy ma’lumotlar" %}</h2>{% include 'catalog/form_fields.html' with optional_details=True %}</section>
+  <section class="panel"><h2>{% translate "Joylashuvlar va qoldiq" %}</h2><p class="muted">{% translate "Har bir partiya va joydagi pachkalar sonini alohida kiriting. Yangi partiyani Boshqaruv → Partiyalar orqali qo‘shing. Kamida bitta joylashuv kerak." %}</p>
+    {{ placements.management_form }}{{ placements.non_form_errors }}
+    <div id="placements">{% for place_form in placements %}<fieldset><legend>{% translate "Joylashuv" %} {{ forloop.counter }}</legend>{% include 'catalog/form_fields.html' with form=place_form %}</fieldset>{% endfor %}</div>
+    <template id="empty-placement"><fieldset><legend>{% translate "Yangi joylashuv" %}</legend>{% include 'catalog/form_fields.html' with form=placements.empty_form %}</fieldset></template>
+    <button class="button secondary" id="add-placement" type="button">{% translate "+ Yana joylashuv" %}</button>
+  </section>
+  <button class="button" type="submit">{% translate "Saqlash" %}</button>
+</form>
+{% endblock %}

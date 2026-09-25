@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% load i18n l10n %}{% block content %}
+<a class="back" href="{{ medicine.get_absolute_url }}">{% translate "← Dori sahifasi" %}</a>
+<h1>{% translate "Sotuv qilish" %}</h1><p class="notice">{% translate "1. Dorini tanlash →" %} <strong>{% translate "2. Partiya va pachkalar soni" %}</strong> {% translate "→ 3. Tasdiqlash" %}</p><h2>{{ medicine.name }}</h2>
+<p>{{ medicine.dosage }} · {{ medicine.form }} · {{ medicine.package_size|default:_("Qadoq hajmi kiritilmagan") }}</p>
+<p>{% if not open_shift %}{% translate "Sotuv qilish uchun avval smenani boshlang." %} {% endif %}<a href="{% url 'catalog:shifts' %}">{% translate "Smenani boshlash / ko‘rish" %}</a></p>
+<p>{% translate "Bir pachka:" %} <strong>{{ medicine.price|floatformat:2 }} {% translate "so‘m" %}</strong></p><form method="post" class="panel editor">{% csrf_token %}{% include 'catalog/form_fields.html' %}<p>{% translate "Jami:" %} <output id="sale-total" data-price="{{ medicine.price|unlocalize }}" aria-live="polite">0,00</output> {% translate "so‘m" %}</p><button class="button">{% translate "Jami narxni ko‘rish" %}</button></form>
+{% endblock %}

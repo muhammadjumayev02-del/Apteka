@@ -1,0 +1,6 @@
+{% load i18n %}
+{{ form.non_field_errors }}
+{% for field in form %}{% if optional_details and field.name == "alternative_names" %}<section><h3>{% translate "Qo‘shimcha ma’lumotlar (ixtiyoriy)" %}</h3>{% endif %}{% if field.is_hidden %}{{ field }}{{ field.errors }}{% else %}
+<div class="form-field"><label for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %} <span class="required-mark">{% translate "* (majburiy)" %}</span>{% endif %}</label>
+{{ field }}{{ field.errors }}{% if field.help_text %}<p class="help" id="{{ field.auto_id }}_helptext">{{ field.help_text }}</p>{% endif %}</div>
+{% endif %}{% if optional_details and forloop.last %}</section>{% endif %}{% endfor %}

@@ -1,0 +1,422 @@
+{
+  "dashboard_links": [
+    "/admin/catalog/medicine/",
+    "/admin/catalog/medicine/add/",
+    "/admin/catalog/batch/",
+    "/admin/catalog/batch/add/",
+    "/admin/auth/user/",
+    "/admin/catalog/shift/",
+    "/admin/catalog/sale/",
+    "/admin/catalog/stocktransfer/"
+  ],
+  "pages": [
+    {
+      "url": "/admin/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/1/change/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/1/history/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/add/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/1/delete/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/1/change/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/1/history/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/add/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/1/delete/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/2/change/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/2/history/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/add/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/2/delete/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/shift/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/shift/1/change/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/shift/1/history/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/sale/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/sale/1/change/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/sale/1/history/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/stocktransfer/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/stocktransfer/1/change/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/stocktransfer/1/history/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/group/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/group/add/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/password_change/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/1/change/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/1/history/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/add/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/medicine/1/delete/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/1/change/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/1/history/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/add/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/batch/1/delete/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/2/change/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/2/history/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/add/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/user/2/delete/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/shift/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/shift/1/change/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/shift/1/history/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/sale/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/sale/1/change/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/sale/1/history/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/stocktransfer/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/stocktransfer/1/change/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/stocktransfer/1/history/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/group/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/auth/group/add/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/password_change/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    },
+    {
+      "url": "/admin/catalog/",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "background": "rgb(245, 248, 245)"
+    }
+  ],
+  "javascript_errors": [],
+  "inline_add_and_validation": "passed"
+}

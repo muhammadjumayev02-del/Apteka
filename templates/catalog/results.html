@@ -1,0 +1,23 @@
+{% load i18n %}
+<div class="section-heading"><h2>{% if q %}{% translate "Qidiruv natijalari" %}{% else %}{% translate "Barcha dorilar" %}{% endif %}</h2><span class="badge">{{ page_obj.paginator.count }} {% translate "ta dori" %}</span></div>
+{% if suggested %}<p class="notice">{% translate "Aniq moslik topilmadi. Ehtimoliy natijalar — nomi, dozasi va qadoq hajmini tekshirib, o‘zingiz tanlang." %}</p>{% endif %}
+<div class="results-grid">
+{% for medicine in page_obj %}
+  <article class="medicine-card">
+    <div class="card-top"><span class="pill">{{ medicine.form }}</span>{% if medicine.is_demo %}<span class="demo">{% translate "Xayoliy namuna" %}</span>{% endif %}</div>
+    <h3><a href="{{ medicine.get_absolute_url }}">{{ medicine.name }}</a></h3><p class="muted">{{ medicine.dosage }} · {{ medicine.package_size|default:_("Qadoq hajmi kiritilmagan") }}</p>
+    <div class="card-bottom"><strong>{{ medicine.price|floatformat:2 }} <small>{% translate "so‘m" %}</small></strong><span class="{% if medicine.total %}stock{% else %}muted{% endif %}">{{ medicine.total }} {% translate "pachka" %}</span></div>
+    <a class="button" href="{% url 'catalog:sell' medicine.pk %}">{% translate "Sotuv qilish" %}</a>
+    <a class="button secondary" href="{% url 'catalog:locations' medicine.pk %}">{% translate "Qayerda turibdi?" %}</a>
+  </article>
+{% empty %}
+  <div class="panel empty"><h3>{% translate "Dori topilmadi" %}</h3><p>{% translate "Nomini tekshiring yoki faol modda bo‘yicha qidiring." %}</p></div>
+{% endfor %}
+</div>
+{% if page_obj.has_other_pages %}
+<nav class="pagination" aria-label="{% translate "Natija sahifalari" %}">
+  {% if page_obj.has_previous %}<a href="?q={{ q|urlencode }}&amp;page={{ page_obj.previous_page_number }}">{% translate "← Oldingi" %}</a>{% endif %}
+  <span>{{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</span>
+  {% if page_obj.has_next %}<a href="?q={{ q|urlencode }}&amp;page={{ page_obj.next_page_number }}">{% translate "Keyingi →" %}</a>{% endif %}
+</nav>
+{% endif %}

@@ -1,0 +1,1628 @@
+# Apteka interface translations; database content stays unchanged.
+
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\nLanguage: uz\nPlural-Forms: nplurals=1; plural=0;\n"
+
+msgid "%(batch)s · %(place)s · %(quantity)s pachka"
+msgstr "%(batch)s · %(place)s · %(quantity)s pachka"
+
+msgid "%(department)s → %(shelf)s-polka → %(row)s-qator"
+msgstr "%(department)s → %(shelf)s-polka → %(row)s-qator"
+
+msgid "%(hours)s soat %(minutes)s daqiqa"
+msgstr "%(hours)s soat %(minutes)s daqiqa"
+
+msgid "%(unknown_expiry_count)s ta qoldig‘i bor partiyada yaroqlilik sanasi kiritilmagan."
+msgstr "%(unknown_expiry_count)s ta qoldig‘i bor partiyada yaroqlilik sanasi kiritilmagan."
+
+msgid "* (majburiy)"
+msgstr "* (majburiy)"
+
+msgid "+ Dori qo‘shish"
+msgstr "+ Dori qo‘shish"
+
+msgid "+ Yana joylashuv"
+msgstr "+ Yana joylashuv"
+
+msgid "-polka →"
+msgstr "-polka →"
+
+msgid "-qator"
+msgstr "-qator"
+
+msgid "1. Dorini tanlash →"
+msgstr "1. Dorini tanlash →"
+
+msgid "2. Partiya va pachkalar soni"
+msgstr "2. Partiya va pachkalar soni"
+
+msgid "APTEKA EGASI UCHUN"
+msgstr "APTEKA EGASI UCHUN"
+
+msgid "APTEKADAGI JOYLASHUVI"
+msgstr "APTEKADAGI JOYLASHUVI"
+
+msgid "Admin panel"
+msgstr "Admin panel"
+
+msgid "Admin panel · Apteka"
+msgstr "Admin panel · Apteka"
+
+msgid "Aniq moslik topilmadi. Ehtimoliy natijalar — nomi, dozasi va qadoq hajmini tekshirib, o‘zingiz tanlang."
+msgstr "Aniq moslik topilmadi. Ehtimoliy natijalar — nomi, dozasi va qadoq hajmini tekshirib, o‘zingiz tanlang."
+
+msgid "Apteka boshqaruvi"
+msgstr "Apteka boshqaruvi"
+
+msgid "Apteka ichki katalogi"
+msgstr "Apteka ichki katalogi"
+
+msgid "Apteka · Dori qidirish"
+msgstr "Apteka · Dori qidirish"
+
+msgid "Aptekachi"
+msgstr "Aptekachi"
+
+msgid "Asosiy ma’lumotlar"
+msgstr "Asosiy ma’lumotlar"
+
+msgid "Asosiy menyu"
+msgstr "Asosiy menyu"
+
+msgid "Avval smenani boshlang."
+msgstr "Avval smenani boshlang."
+
+msgid "Barcha dorilar"
+msgstr "Barcha dorilar"
+
+msgid "Barcha joylardagi jami qoldiq"
+msgstr "Barcha joylardagi jami qoldiq"
+
+msgid "Barcha joylardagi jami qoldiq %(threshold)s pachkadan kam."
+msgstr "Barcha joylardagi jami qoldiq %(threshold)s pachkadan kam."
+
+msgid "Barcha kunlar bo‘yicha oxirgi 10 ta sotuv. Bekor qilinganlari alohida belgilangan."
+msgstr "Barcha kunlar bo‘yicha oxirgi 10 ta sotuv. Bekor qilinganlari alohida belgilangan."
+
+msgid "Barcha smenalar"
+msgstr "Barcha smenalar"
+
+msgid "Bekor qilgan xodim"
+msgstr "Bekor qilgan xodim"
+
+msgid "Bekor qilingan sotuvlar barcha ko‘rsatkichlardan chiqarilgan."
+msgstr "Bekor qilingan sotuvlar barcha ko‘rsatkichlardan chiqarilgan."
+
+msgid "Bekor qilingan sotuvlar hisobga olinmaydi."
+msgstr "Bekor qilingan sotuvlar hisobga olinmaydi."
+
+msgid "Bekor qilingan vaqt"
+msgstr "Bekor qilingan vaqt"
+
+msgid "Bekor qilingan — tushumga kiritilmagan"
+msgstr "Bekor qilingan — tushumga kiritilmagan"
+
+msgid "Bekor qilingan:"
+msgstr "Bekor qilingan:"
+
+msgid "Belgilangan chegaradan kam qolgan dorilar yo‘q."
+msgstr "Belgilangan chegaradan kam qolgan dorilar yo‘q."
+
+msgid "Bir pachka narxi"
+msgstr "Bir pachka narxi"
+
+msgid "Bir pachka:"
+msgstr "Bir pachka:"
+
+msgid "Bir partiya uchun joylashuv takrorlangan."
+msgstr "Bir partiya uchun joylashuv takrorlangan."
+
+msgid "Bosh sahifaga qaytish"
+msgstr "Bosh sahifaga qaytish"
+
+msgid "Boshlangan vaqt"
+msgstr "Boshlangan vaqt"
+
+msgid "Boshlanish va tugash sanasi hamda vaqtini Toshkent vaqti bilan kiriting. Tungi smena uchun tugash sanasini keyingi kun qilib belgilang."
+msgstr "Boshlanish va tugash sanasi hamda vaqtini Toshkent vaqti bilan kiriting. Tungi smena uchun tugash sanasini keyingi kun qilib belgilang."
+
+msgid "Boshlanmagan rejalashtirilgan smenalar yo‘q."
+msgstr "Boshlanmagan rejalashtirilgan smenalar yo‘q."
+
+msgid "Boshlanmagan — reja vaqti o‘tgan"
+msgstr "Boshlanmagan — reja vaqti o‘tgan"
+
+msgid "Boshqaruv amallari"
+msgstr "Boshqaruv amallari"
+
+msgid "Boshqaruv faqat administrator uchun."
+msgstr "Boshqaruv faqat administrator uchun."
+
+msgid "Boshqaruv paneli"
+msgstr "Boshqaruv paneli"
+
+msgid "Bo‘lim"
+msgstr "Bo‘lim"
+
+msgid "Bu hisob faol emas."
+msgstr "Bu hisob faol emas."
+
+msgid "Bu hisobga katalogga kirish ruxsati berilmagan."
+msgstr "Bu hisobga katalogga kirish ruxsati berilmagan."
+
+msgid "Bu joyda faqat %(quantity)s pachka bor. Kamroq son kiriting."
+msgstr "Bu joyda faqat %(quantity)s pachka bor. Kamroq son kiriting."
+
+msgid "Bu joyda qoldiq yetarli emas: faqat %(quantity)s pachka bor. Kamroq son kiriting."
+msgstr "Bu joyda qoldiq yetarli emas: faqat %(quantity)s pachka bor. Kamroq son kiriting."
+
+msgid "Bu maydonni to‘ldiring."
+msgstr "Bu maydonni to‘ldiring."
+
+msgid "Bu smena allaqachon boshlangan yoki yakunlangan."
+msgstr "Bu smena allaqachon boshlangan yoki yakunlangan."
+
+msgid "Bu xodimning shu vaqtda boshqa smenasi bor."
+msgstr "Bu xodimning shu vaqtda boshqa smenasi bor."
+
+msgid "Bugun eng ko‘p sotilgan dorilar"
+msgstr "Bugun eng ko‘p sotilgan dorilar"
+
+msgid "Bugun hali tasdiqlangan, bekor qilinmagan sotuv yo‘q."
+msgstr "Bugun hali tasdiqlangan, bekor qilinmagan sotuv yo‘q."
+
+msgid "Bugun uchun jadval yoki haqiqiy smena yo‘q."
+msgstr "Bugun uchun jadval yoki haqiqiy smena yo‘q."
+
+msgid "Bugun va keyingi"
+msgstr "Bugun va keyingi"
+
+msgid "Bugun va keyingi %(expiry_days)s kun ichida. Faqat qoldig‘i bor partiyalar."
+msgstr "Bugun va keyingi %(expiry_days)s kun ichida. Faqat qoldig‘i bor partiyalar."
+
+msgid "Bugunga to‘g‘ri keladigan rejalar va haqiqiy smenalar, jumladan davom etayotgan tungi smenalar."
+msgstr "Bugunga to‘g‘ri keladigan rejalar va haqiqiy smenalar, jumladan davom etayotgan tungi smenalar."
+
+msgid "Bugungi sotuv natijalari"
+msgstr "Bugungi sotuv natijalari"
+
+msgid "Bugungi sotuvlar hali yo‘q."
+msgstr "Bugungi sotuvlar hali yo‘q."
+
+msgid "Bugungi xodimlar smenalari"
+msgstr "Bugungi xodimlar smenalari"
+
+msgid "Chiqish"
+msgstr "Chiqish"
+
+msgid "DORI MA’LUMOTLARI"
+msgstr "DORI MA’LUMOTLARI"
+
+msgid "DORILAR KATALOGI"
+msgstr "DORILAR KATALOGI"
+
+msgid "Davom etmoqda"
+msgstr "Davom etmoqda"
+
+msgid "Dori"
+msgstr "Dori"
+
+msgid "Dori haqida"
+msgstr "Dori haqida"
+
+msgid "Dori ma’lumotlari"
+msgstr "Dori ma’lumotlari"
+
+msgid "Dori ma’lumotlari saqlandi."
+msgstr "Dori ma’lumotlari saqlandi."
+
+msgid "Dori nomi"
+msgstr "Dori nomi"
+
+msgid "Dori nomi yoki faol modda"
+msgstr "Dori nomi yoki faol modda"
+
+msgid "Dori nomini yozing…"
+msgstr "Dori nomini yozing…"
+
+msgid "Dori qidirish"
+msgstr "Dori qidirish"
+
+msgid "Dori qidirishga qaytish"
+msgstr "Dori qidirishga qaytish"
+
+msgid "Dori qo‘shish"
+msgstr "Dori qo‘shish"
+
+msgid "Dori shakli"
+msgstr "Dori shakli"
+
+msgid "Dori topilmadi"
+msgstr "Dori topilmadi"
+
+msgid "Dorilar"
+msgstr "Dorilar"
+
+msgid "Dorilar katalogi"
+msgstr "Dorilar katalogi"
+
+msgid "Dorilar katalogiga kirish uchun hisobingizdan foydalaning."
+msgstr "Dorilar katalogiga kirish uchun hisobingizdan foydalaning."
+
+msgid "Dorilar va ombor"
+msgstr "Dorilar va ombor"
+
+msgid "Dorilar va qoldiq"
+msgstr "Dorilar va qoldiq"
+
+msgid "Dorini tahrirlash"
+msgstr "Dorini tahrirlash"
+
+msgid "Dorini toping."
+msgstr "Dorini toping."
+
+msgid "Dozasi"
+msgstr "Dozasi"
+
+msgid "Dozasi:"
+msgstr "Dozasi:"
+
+msgid "Foydalanuvchi nomi"
+msgstr "Foydalanuvchi nomi"
+
+msgid "Foydalanuvchi nomi yoki parol noto‘g‘ri."
+msgstr "Foydalanuvchi nomi yoki parol noto‘g‘ri."
+
+msgid "Ha, sotuvni bekor qilish"
+msgstr "Ha, sotuvni bekor qilish"
+
+msgid "Hali boshlanmagan"
+msgstr "Hali boshlanmagan"
+
+msgid "Hali ko‘chirish yo‘q."
+msgstr "Hali ko‘chirish yo‘q."
+
+msgid "Hali smena yo‘q."
+msgstr "Hali smena yo‘q."
+
+msgid "Hali sotuvlar yo‘q."
+msgstr "Hali sotuvlar yo‘q."
+
+msgid "Haqiqiy boshlanish:"
+msgstr "Haqiqiy boshlanish:"
+
+msgid "Haqiqiy yakun:"
+msgstr "Haqiqiy yakun:"
+
+msgid "Haqiqiy:"
+msgstr "Haqiqiy:"
+
+msgid "Har bir partiya va joydagi pachkalar sonini alohida kiriting. Yangi partiyani Boshqaruv → Partiyalar orqali qo‘shing. Kamida bitta joylashuv kerak."
+msgstr "Har bir partiya va joydagi pachkalar sonini alohida kiriting. Yangi partiyani Boshqaruv → Partiyalar orqali qo‘shing. Kamida bitta joylashuv kerak."
+
+msgid "Hisobni apteka administratori yaratadi."
+msgstr "Hisobni apteka administratori yaratadi."
+
+msgid "Hisobotlar"
+msgstr "Hisobotlar"
+
+msgid "Hozir mavjud qoldiq yo‘q."
+msgstr "Hozir mavjud qoldiq yo‘q."
+
+msgid "Hozir omborda mavjud emas."
+msgstr "Hozir omborda mavjud emas."
+
+msgid "Ish jadvali"
+msgstr "Ish jadvali"
+
+msgid "Ish jadvali saqlandi."
+msgstr "Ish jadvali saqlandi."
+
+msgid "Ish jadvali va smena natijalari"
+msgstr "Ish jadvali va smena natijalari"
+
+msgid "Ish jadvalini belgilash"
+msgstr "Ish jadvalini belgilash"
+
+msgid "Ish jadvallari"
+msgstr "Ish jadvallari"
+
+msgid "Ishlagan vaqt:"
+msgstr "Ishlagan vaqt:"
+
+msgid "Ishlamoqda"
+msgstr "Ishlamoqda"
+
+msgid "Jadvaldan tashqari"
+msgstr "Jadvaldan tashqari"
+
+msgid "Jami mavjud"
+msgstr "Jami mavjud"
+
+msgid "Jami narx"
+msgstr "Jami narx"
+
+msgid "Jami narxni ko‘rish"
+msgstr "Jami narxni ko‘rish"
+
+msgid "Jami tushum"
+msgstr "Jami tushum"
+
+msgid "Jami:"
+msgstr "Jami:"
+
+msgid "Joyini darhol biling."
+msgstr "Joyini darhol biling."
+
+msgid "Joylashuv"
+msgstr "Joylashuv"
+
+msgid "Joylashuv hali kiritilmagan."
+msgstr "Joylashuv hali kiritilmagan."
+
+msgid "Joylashuvlar"
+msgstr "Joylashuvlar"
+
+msgid "Joylashuvlar va qoldiq"
+msgstr "Joylashuvlar va qoldiq"
+
+msgid "Kam qolgan dorilar"
+msgstr "Kam qolgan dorilar"
+
+msgid "Kamida %(limit_value)s kiriting."
+msgstr "Kamida %(limit_value)s kiriting."
+
+msgid "Katalog"
+msgstr "Katalog"
+
+msgid "Kerakli dori. Aniq joylashuv."
+msgstr "Kerakli dori. Aniq joylashuv."
+
+msgid "Kerakli xodim guruhiga qo‘shish uchun administratorga murojaat qiling."
+msgstr "Kerakli xodim guruhiga qo‘shish uchun administratorga murojaat qiling."
+
+msgid "Keyingi →"
+msgstr "Keyingi →"
+
+msgid "Kirish · Apteka"
+msgstr "Kirish · Apteka"
+
+msgid "Kirish →"
+msgstr "Kirish →"
+
+msgid "Kiritilmagan"
+msgstr "Kiritilmagan"
+
+msgid "Kiritilmagan — admin orqali to‘ldiring"
+msgstr "Kiritilmagan — admin orqali to‘ldiring"
+
+msgid "Ko‘chirish"
+msgstr "Ko‘chirish"
+
+msgid "Ko‘chirish #%(id)s · %(name)s"
+msgstr "Ko‘chirish #%(id)s · %(name)s"
+
+msgid "Ko‘chirish tarixi"
+msgstr "Ko‘chirish tarixi"
+
+msgid "Ko‘pi bilan %(limit_value)s kiriting."
+msgstr "Ko‘pi bilan %(limit_value)s kiriting."
+
+msgid "Ko‘rish: %(model)s"
+msgstr "Ko‘rish: %(model)s"
+
+msgid "MUDDATI O‘TGAN ·"
+msgstr "MUDDATI O‘TGAN ·"
+
+msgid "Mahsulot yoki narx o‘zgargan. Sotuvni qaytadan tekshiring."
+msgstr "Mahsulot yoki narx o‘zgargan. Sotuvni qaytadan tekshiring."
+
+msgid "Mahsulotni tekshiring. Bu tekshiruv tibbiy tavsiya yoki dori almashtirish tavsiyasi emas."
+msgstr "Mahsulotni tekshiring. Bu tekshiruv tibbiy tavsiya yoki dori almashtirish tavsiyasi emas."
+
+msgid "Manba (yo‘riqnoma nomi, versiyasi yoki havola)"
+msgstr "Manba (yo‘riqnoma nomi, versiyasi yoki havola)"
+
+msgid "Manba joyda qoldiq yetarli emas."
+msgstr "Manba joyda qoldiq yetarli emas."
+
+msgid "Manba partiya va joy"
+msgstr "Manba partiya va joy"
+
+msgid "Manba va yangi joy bir xil bo‘lishi mumkin emas."
+msgstr "Manba va yangi joy bir xil bo‘lishi mumkin emas."
+
+msgid "Manba:"
+msgstr "Manba:"
+
+msgid "Mavjud soni"
+msgstr "Mavjud soni"
+
+msgid "Muddati o‘tgan partiyalar"
+msgstr "Muddati o‘tgan partiyalar"
+
+msgid "Muddati yaqinlashayotgan partiyalar"
+msgstr "Muddati yaqinlashayotgan partiyalar"
+
+msgid "Muddati yaqinlashayotgan partiyalar yo‘q."
+msgstr "Muddati yaqinlashayotgan partiyalar yo‘q."
+
+msgid "Muqobil nomlar"
+msgstr "Muqobil nomlar"
+
+msgid "Narxi (so‘m)"
+msgstr "Narxi (so‘m)"
+
+msgid "Natija sahifalari"
+msgstr "Natija sahifalari"
+
+msgid "Natijalar yangilandi."
+msgstr "Natijalar yangilandi."
+
+msgid "Nomini tekshiring yoki faol modda bo‘yicha qidiring."
+msgstr "Nomini tekshiring yoki faol modda bo‘yicha qidiring."
+
+msgid "Nomining bir qismini yozish kifoya · Natijalar yozganingizda yangilanadi"
+msgstr "Nomining bir qismini yozish kifoya · Natijalar yozganingizda yangilanadi"
+
+msgid "Ochiq"
+msgstr "Ochiq"
+
+msgid "Oldingi joy"
+msgstr "Oldingi joy"
+
+msgid "Oxirgi yangilanish"
+msgstr "Oxirgi yangilanish"
+
+msgid "Oxirgi yangilanish:"
+msgstr "Oxirgi yangilanish:"
+
+msgid "O‘chirish: %(model)s"
+msgstr "O‘chirish: %(model)s"
+
+msgid "O‘zgartirish: %(model)s"
+msgstr "O‘zgartirish: %(model)s"
+
+msgid "Pachkalar ko‘chirildi. Umumiy qoldiq o‘zgarmadi."
+msgstr "Pachkalar ko‘chirildi. Umumiy qoldiq o‘zgarmadi."
+
+msgid "Pachkalar soni"
+msgstr "Pachkalar soni"
+
+msgid "Pachkalar soni bo‘yicha birinchi 5 ta dori."
+msgstr "Pachkalar soni bo‘yicha birinchi 5 ta dori."
+
+msgid "Pachkalarni ko‘chirish"
+msgstr "Pachkalarni ko‘chirish"
+
+msgid "Parol"
+msgstr "Parol"
+
+msgid "Parolni o‘zgartirish"
+msgstr "Parolni o‘zgartirish"
+
+msgid "Partiya"
+msgstr "Partiya"
+
+msgid "Partiya (bo‘sh bo‘lsa boshlang‘ich partiya)"
+msgstr "Partiya (bo‘sh bo‘lsa boshlang‘ich partiya)"
+
+msgid "Partiya raqami"
+msgstr "Partiya raqami"
+
+msgid "Partiya shu doriga tegishli bo‘lishi kerak."
+msgstr "Partiya shu doriga tegishli bo‘lishi kerak."
+
+msgid "Partiya va joylashuv"
+msgstr "Partiya va joylashuv"
+
+msgid "Partiya yoki joylashuv o‘zgargan. Sotuvni qaytadan tekshiring."
+msgstr "Partiya yoki joylashuv o‘zgargan. Sotuvni qaytadan tekshiring."
+
+msgid "Partiya:"
+msgstr "Partiya:"
+
+msgid "Partiyalar"
+msgstr "Partiyalar"
+
+msgid "Partiyalarni tekshirish"
+msgstr "Partiyalarni tekshirish"
+
+msgid "Polka"
+msgstr "Polka"
+
+msgid "Polkalar orasida ko‘chirish"
+msgstr "Polkalar orasida ko‘chirish"
+
+msgid "Polkalar orasida ko‘chirishlar"
+msgstr "Polkalar orasida ko‘chirishlar"
+
+msgid "Qadoq hajmi"
+msgstr "Qadoq hajmi"
+
+msgid "Qadoq hajmi kiritilmagan"
+msgstr "Qadoq hajmi kiritilmagan"
+
+msgid "Qadoq hajmi:"
+msgstr "Qadoq hajmi:"
+
+msgid "Qator"
+msgstr "Qator"
+
+msgid "Qayerda turibdi?"
+msgstr "Qayerda turibdi?"
+
+msgid "Qayerdan topish mumkin?"
+msgstr "Qayerdan topish mumkin?"
+
+msgid "Qidirilmoqda…"
+msgstr "Qidirilmoqda…"
+
+msgid "Qidirish"
+msgstr "Qidirish"
+
+msgid "Qidiruv natijalari"
+msgstr "Qidiruv natijalari"
+
+msgid "Qidiruv yangilanmadi. Qayta urinib ko‘ring yoki Qidirish tugmasini bosing."
+msgstr "Qidiruv yangilanmadi. Qayta urinib ko‘ring yoki Qidirish tugmasini bosing."
+
+msgid "Qoldig‘i bor muddati o‘tgan partiyalar yo‘q."
+msgstr "Qoldig‘i bor muddati o‘tgan partiyalar yo‘q."
+
+msgid "Qoldiq (pachka)"
+msgstr "Qoldiq (pachka)"
+
+msgid "Qoldiq yetarli emas. Sotuvni qaytadan tekshiring."
+msgstr "Qoldiq yetarli emas. Sotuvni qaytadan tekshiring."
+
+msgid "Qoldiqni ko‘rish"
+msgstr "Qoldiqni ko‘rish"
+
+msgid "Qoldiqni tahrirlash"
+msgstr "Qoldiqni tahrirlash"
+
+msgid "Qo‘llanish holatlari"
+msgstr "Qo‘llanish holatlari"
+
+msgid "Qo‘llashdan oldin rasmiy yo‘riqnoma va mutaxassis tavsiyasiga amal qiling"
+msgstr "Qo‘llashdan oldin rasmiy yo‘riqnoma va mutaxassis tavsiyasiga amal qiling"
+
+msgid "Qo‘shimcha ma’lumotlar"
+msgstr "Qo‘shimcha ma’lumotlar"
+
+msgid "Qo‘shimcha ma’lumotlar (ixtiyoriy)"
+msgstr "Qo‘shimcha ma’lumotlar (ixtiyoriy)"
+
+msgid "Qo‘shish: %(model)s"
+msgstr "Qo‘shish: %(model)s"
+
+msgid "Quyidagi partiyalarning yaroqlilik muddati o‘tgan. Faqat qoldig‘i bor partiyalar."
+msgstr "Quyidagi partiyalarning yaroqlilik muddati o‘tgan. Faqat qoldig‘i bor partiyalar."
+
+msgid "Rasmiy ma’lumot hali kiritilmagan."
+msgstr "Rasmiy ma’lumot hali kiritilmagan."
+
+msgid "Rasmiy yo‘riqnomaga ko‘ra qo‘llanishi"
+msgstr "Rasmiy yo‘riqnomaga ko‘ra qo‘llanishi"
+
+msgid "Reja:"
+msgstr "Reja:"
+
+msgid "Rejalashtirilgan"
+msgstr "Rejalashtirilgan"
+
+msgid "Rejalashtirilgan boshlanish"
+msgstr "Rejalashtirilgan boshlanish"
+
+msgid "Rejalashtirilgan smenalar"
+msgstr "Rejalashtirilgan smenalar"
+
+msgid "Rejalashtirilgan tugash"
+msgstr "Rejalashtirilgan tugash"
+
+msgid "Ro‘yxatdan tanlang."
+msgstr "Ro‘yxatdan tanlang."
+
+msgid "Ruxsat guruhlari"
+msgstr "Ruxsat guruhlari"
+
+msgid "Ruxsat yetarli emas"
+msgstr "Ruxsat yetarli emas"
+
+msgid "Sahifa topilmadi"
+msgstr "Sahifa topilmadi"
+
+msgid "Sahifa yo‘li"
+msgstr "Sahifa yo‘li"
+
+msgid "Sana kelajakda bo‘lishi mumkin emas."
+msgstr "Sana kelajakda bo‘lishi mumkin emas."
+
+msgid "Sana va vaqt"
+msgstr "Sana va vaqt"
+
+msgid "Saqlash"
+msgstr "Saqlash"
+
+msgid "Savdo nomi"
+msgstr "Savdo nomi"
+
+msgid "Savdo nomi, faol modda yoki muqobil nom bo‘yicha qidiring — lotin va kirill yozuvida."
+msgstr "Savdo nomi, faol modda yoki muqobil nom bo‘yicha qidiring — lotin va kirill yozuvida."
+
+msgid "Shakli:"
+msgstr "Shakli:"
+
+msgid "Smena"
+msgstr "Smena"
+
+msgid "Smena #%(id)s · %(name)s"
+msgstr "Smena #%(id)s · %(name)s"
+
+msgid "Smena boshlandi. Sotuv qilish mumkin."
+msgstr "Smena boshlandi. Sotuv qilish mumkin."
+
+msgid "Smena natijalari"
+msgstr "Smena natijalari"
+
+msgid "Smena noto‘g‘ri tanlangan."
+msgstr "Smena noto‘g‘ri tanlangan."
+
+msgid "Smena sotuvlarini ko‘rish →"
+msgstr "Smena sotuvlarini ko‘rish →"
+
+msgid "Smena tafsilotlari"
+msgstr "Smena tafsilotlari"
+
+msgid "Smena yakunlandi."
+msgstr "Smena yakunlandi."
+
+msgid "Smena yopilgan. Yangi smena boshlang."
+msgstr "Smena yopilgan. Yangi smena boshlang."
+
+msgid "Smenalar"
+msgstr "Smenalar"
+
+msgid "Smenani boshlash"
+msgstr "Smenani boshlash"
+
+msgid "Smenani boshlash (jadvaldan tashqari)"
+msgstr "Smenani boshlash (jadvaldan tashqari)"
+
+msgid "Smenani boshlash / ko‘rish"
+msgstr "Smenani boshlash / ko‘rish"
+
+msgid "Smenani yakunlash"
+msgstr "Smenani yakunlash"
+
+msgid "Sotiladigan pachkalar soni"
+msgstr "Sotiladigan pachkalar soni"
+
+msgid "Sotiladigan pachkalar soni:"
+msgstr "Sotiladigan pachkalar soni:"
+
+msgid "Sotilgan pachkalar"
+msgstr "Sotilgan pachkalar"
+
+msgid "Sotish"
+msgstr "Sotish"
+
+msgid "Sotuv"
+msgstr "Sotuv"
+
+msgid "Sotuv #%(id)s · %(name)s"
+msgstr "Sotuv #%(id)s · %(name)s"
+
+msgid "Sotuv bekor qilindi. Pachkalar qoldiqqa qaytarildi."
+msgstr "Sotuv bekor qilindi. Pachkalar qoldiqqa qaytarildi."
+
+msgid "Sotuv qilish"
+msgstr "Sotuv qilish"
+
+msgid "Sotuv qilish uchun avval smenani boshlang."
+msgstr "Sotuv qilish uchun avval smenani boshlang."
+
+msgid "Sotuv qilish: dorini qidiring va uning «Sotuv qilish» tugmasini bosing."
+msgstr "Sotuv qilish: dorini qidiring va uning «Sotuv qilish» tugmasini bosing."
+
+msgid "Sotuv tasdiqlandi."
+msgstr "Sotuv tasdiqlandi."
+
+msgid "Sotuv va ko‘chirish tarixi"
+msgstr "Sotuv va ko‘chirish tarixi"
+
+msgid "Sotuvdan oldin admin qadoq hajmini kiritishi kerak."
+msgstr "Sotuvdan oldin admin qadoq hajmini kiritishi kerak."
+
+msgid "Sotuvdan oldingi tekshiruv"
+msgstr "Sotuvdan oldingi tekshiruv"
+
+msgid "Sotuvlar"
+msgstr "Sotuvlar"
+
+msgid "Sotuvlar yo‘q."
+msgstr "Sotuvlar yo‘q."
+
+msgid "Sotuvni bekor qilasizmi?"
+msgstr "Sotuvni bekor qilasizmi?"
+
+msgid "Sotuvni bekor qilish"
+msgstr "Sotuvni bekor qilish"
+
+msgid "Sotuvni bekor qilish va qoldiqni qaytarish"
+msgstr "Sotuvni bekor qilish va qoldiqni qaytarish"
+
+msgid "Sotuvni tasdiqlash"
+msgstr "Sotuvni tasdiqlash"
+
+msgid "So‘nggi sotuvlar"
+msgstr "So‘nggi sotuvlar"
+
+msgid "Tahrirlash"
+msgstr "Tahrirlash"
+
+msgid "Tarixga bog‘langan joyni o‘chirish yoki almashtirish mumkin emas. Ko‘chirish sahifasidan foydalaning."
+msgstr "Tarixga bog‘langan joyni o‘chirish yoki almashtirish mumkin emas. Ko‘chirish sahifasidan foydalaning."
+
+msgid "Tarkib va qo‘llanishni faqat rasmiy yo‘riqnomadan kiriting. Manba va tekshirilgan sanani ko‘rsating."
+msgstr "Tarkib va qo‘llanishni faqat rasmiy yo‘riqnomadan kiriting. Manba va tekshirilgan sanani ko‘rsating."
+
+msgid "Tarkibi / faol moddalar"
+msgstr "Tarkibi / faol moddalar"
+
+msgid "Tasdiqlangan"
+msgstr "Tasdiqlangan"
+
+msgid "Tasdiqlasangiz, pachkalar oldingi joyiga qaytariladi va bu sotuv tushumdan chiqariladi."
+msgstr "Tasdiqlasangiz, pachkalar oldingi joyiga qaytariladi va bu sotuv tushumdan chiqariladi."
+
+msgid "Tasdiqlash muddati tugagan yoki ma’lumot o‘zgargan. Sotuvni qaytadan tayyorlang."
+msgstr "Tasdiqlash muddati tugagan yoki ma’lumot o‘zgargan. Sotuvni qaytadan tayyorlang."
+
+msgid "Tekshirilgan sanani kiriting."
+msgstr "Tekshirilgan sanani kiriting."
+
+msgid "Tezkor amallar"
+msgstr "Tezkor amallar"
+
+msgid "Tibbiy ma’lumot tekshirilgan sana"
+msgstr "Tibbiy ma’lumot tekshirilgan sana"
+
+msgid "Tibbiy ma’lumot tekshirilgan sana:"
+msgstr "Tibbiy ma’lumot tekshirilgan sana:"
+
+msgid "Tibbiy ma’lumot uchun rasmiy manbani kiriting."
+msgstr "Tibbiy ma’lumot uchun rasmiy manbani kiriting."
+
+msgid "To‘g‘ri qiymat kiriting."
+msgstr "To‘g‘ri qiymat kiriting."
+
+msgid "Tugash vaqti boshlanishdan keyin bo‘lishi kerak."
+msgstr "Tugash vaqti boshlanishdan keyin bo‘lishi kerak."
+
+msgid "VAKOLATLI XODIM"
+msgstr "VAKOLATLI XODIM"
+
+msgid "Vaqtlar Toshkent vaqti bilan ko‘rsatilgan."
+msgstr "Vaqtlar Toshkent vaqti bilan ko‘rsatilgan."
+
+msgid "XAYOLIY NAMUNA. Bu haqiqiy dori emas; nomi, dozasi va narxi faqat saytni sinash uchun."
+msgstr "XAYOLIY NAMUNA. Bu haqiqiy dori emas; nomi, dozasi va narxi faqat saytni sinash uchun."
+
+msgid "XODIMLAR UCHUN"
+msgstr "XODIMLAR UCHUN"
+
+msgid "Xayoliy namuna"
+msgstr "Xayoliy namuna"
+
+msgid "Xodim"
+msgstr "Xodim"
+
+msgid "Xodimlar"
+msgstr "Xodimlar"
+
+msgid "Xodimlar va ish vaqti"
+msgstr "Xodimlar va ish vaqti"
+
+msgid "Xodimlar va smenalar"
+msgstr "Xodimlar va smenalar"
+
+msgid "Xush kelibsiz"
+msgstr "Xush kelibsiz"
+
+msgid "Yakunlangan"
+msgstr "Yakunlangan"
+
+msgid "Yakunlangan vaqt"
+msgstr "Yakunlangan vaqt"
+
+msgid "Yangi bo‘lim"
+msgstr "Yangi bo‘lim"
+
+msgid "Yangi joy"
+msgstr "Yangi joy"
+
+msgid "Yangi joylashuv"
+msgstr "Yangi joylashuv"
+
+msgid "Yangi partiya"
+msgstr "Yangi partiya"
+
+msgid "Yangi polka"
+msgstr "Yangi polka"
+
+msgid "Yangi qator"
+msgstr "Yangi qator"
+
+msgid "Yaroqlilik sanasi"
+msgstr "Yaroqlilik sanasi"
+
+msgid "Yo‘q, qaytish"
+msgstr "Yo‘q, qaytish"
+
+msgid "Yo‘riqnoma ma’lumotlari"
+msgstr "Yo‘riqnoma ma’lumotlari"
+
+msgid "kun ichida. Faqat qoldig‘i bor partiyalar."
+msgstr "kun ichida. Faqat qoldig‘i bor partiyalar."
+
+msgid "pachka"
+msgstr "pachka"
+
+msgid "pachka ·"
+msgstr "pachka ·"
+
+msgid "pachkadan kam."
+msgstr "pachkadan kam."
+
+msgid "smenasi"
+msgstr "smenasi"
+
+msgid "sotuv ·"
+msgstr "sotuv ·"
+
+msgid "so‘m"
+msgstr "so‘m"
+
+msgid "so‘m ·"
+msgstr "so‘m ·"
+
+msgid "ta dori"
+msgstr "ta dori"
+
+msgid "ta qoldig‘i bor partiyada yaroqlilik sanasi kiritilmagan."
+msgstr "ta qoldig‘i bor partiyada yaroqlilik sanasi kiritilmagan."
+
+msgid "ta sotuv"
+msgid_plural "ta sotuv"
+msgstr[0] "ta sotuv"
+
+msgid "· Apteka"
+msgstr "· Apteka"
+
+msgid "· Bu joyda qolmagan"
+msgstr "· Bu joyda qolmagan"
+
+msgid "· Toshkent vaqti bilan"
+msgstr "· Toshkent vaqti bilan"
+
+msgid "← Dori sahifasi"
+msgstr "← Dori sahifasi"
+
+msgid "← Katalogga qaytish"
+msgstr "← Katalogga qaytish"
+
+msgid "← Oldingi"
+msgstr "← Oldingi"
+
+msgid "← Qaytish va o‘zgartirish"
+msgstr "← Qaytish va o‘zgartirish"
+
+msgid "← Qidiruvga qaytish"
+msgstr "← Qidiruvga qaytish"
+
+msgid "← Smena sotuvlariga qaytish"
+msgstr "← Smena sotuvlariga qaytish"
+
+msgid "← Smenalar"
+msgstr "← Smenalar"
+
+msgid "→ 3. Tasdiqlash"
+msgstr "→ 3. Tasdiqlash"
+
+msgid "Delete selected %(verbose_name_plural)s"
+msgstr "Tanlangan %(verbose_name_plural)sni o‘chirish"
+
+msgid "Delete multiple objects"
+msgstr "Bir nechta yozuvni o‘chirish"
+
+msgid "Administration"
+msgstr "Boshqaruv"
+
+msgid "user"
+msgstr "foydalanuvchi"
+
+msgid "content type"
+msgstr "ma’lumot turi"
+
+msgid "LogEntry Object"
+msgstr "Jurnal yozuvi"
+
+msgid "Added {name} “{object}”."
+msgstr "{name} “{object}” qo‘shildi."
+
+msgid "Added."
+msgstr "Qo‘shildi."
+
+msgid "Changed {fields} for {name} “{object}”."
+msgstr "{name} “{object}” uchun {fields} o‘zgartirildi."
+
+msgid "Changed {fields}."
+msgstr "{fields} o‘zgartirildi."
+
+msgid "Deleted {name} “{object}”."
+msgstr "{name} “{object}” o‘chirildi."
+
+msgid "No fields changed."
+msgstr "Hech bir maydon o‘zgartirilmadi."
+
+msgid "Hold down “Control”, or “Command” on a Mac, to select more than one."
+msgstr "Bir nechta qiymatni tanlash uchun “Control” yoki Mac’da “Command” tugmasini bosib turing."
+
+msgid "Select this object for an action - {}"
+msgstr "Amal uchun ushbu yozuvni tanlash — {}"
+
+msgid "The {name} “{obj}” was added successfully."
+msgstr "{name} “{obj}” muvaffaqiyatli qo‘shildi."
+
+msgid "You may edit it again below."
+msgstr "Quyida yana tahrirlashingiz mumkin."
+
+msgid "The {name} “{obj}” was added successfully. You may add another {name} below."
+msgstr "{name} “{obj}” muvaffaqiyatli qo‘shildi. Quyida yana {name} qo‘shishingiz mumkin."
+
+msgid "The {name} “{obj}” was changed successfully. You may edit it again below."
+msgstr "{name} “{obj}” muvaffaqiyatli o‘zgartirildi. Quyida yana tahrirlashingiz mumkin."
+
+msgid "The {name} “{obj}” was changed successfully. You may add another {name} below."
+msgstr "{name} “{obj}” muvaffaqiyatli o‘zgartirildi. Quyida yana {name} qo‘shishingiz mumkin."
+
+msgid "Items must be selected in order to perform actions on them. No items have been changed."
+msgstr "Amal bajarish uchun yozuvlarni tanlang. Hech bir yozuv o‘zgartirilmadi."
+
+msgid "No action selected."
+msgstr "Amal tanlanmagan."
+
+msgid "%(name)s with ID “%(key)s” doesn’t exist. Perhaps it was deleted?"
+msgstr "“%(key)s” raqamli %(name)s mavjud emas. O‘chirilgan bo‘lishi mumkin."
+
+msgid "Add %s"
+msgstr "%s qo‘shish"
+
+msgid "%(count)s %(name)s was changed successfully."
+msgid_plural "%(count)s %(name)s were changed successfully."
+msgstr[0] "%(count)s ta %(name)s muvaffaqiyatli o‘zgartirildi."
+
+msgid "%(total_count)s selected"
+msgid_plural "All %(total_count)s selected"
+msgstr[0] "%(total_count)s ta tanlandi"
+
+msgid "0 of %(cnt)s selected"
+msgstr "%(cnt)s tadan 0 ta tanlandi"
+
+msgid "Delete"
+msgstr "O‘chirish"
+
+msgid "Change history: %s"
+msgstr "O‘zgarishlar tarixi: %s"
+
+msgid "%(class_name)s %(instance)s"
+msgstr "%(class_name)s %(instance)s"
+
+msgid "Deleting %(class_name)s %(instance)s would require deleting the following protected related objects: %(related_objects)s"
+msgstr "%(class_name)s %(instance)sni o‘chirish uchun quyidagi himoyalangan bog‘liq yozuvlarni o‘chirish kerak: %(related_objects)s"
+
+msgid "Django site admin"
+msgstr "Django sayt boshqaruvi"
+
+msgid "Django administration"
+msgstr "Django boshqaruvi"
+
+msgid "Site administration"
+msgstr "Sayt boshqaruvi"
+
+msgid "Log in"
+msgstr "Kirish"
+
+msgid "%(app)s administration"
+msgstr "%(app)s boshqaruvi"
+
+msgid "Page not found"
+msgstr "Sahifa topilmadi"
+
+msgid "We’re sorry, but the requested page could not be found."
+msgstr "Kechirasiz, so‘ralgan sahifa topilmadi."
+
+msgid "Home"
+msgstr "Bosh sahifa"
+
+msgid "There’s been an error. It’s been reported to the site administrators via email and should be fixed shortly. Thanks for your patience."
+msgstr "Xatolik yuz berdi. Administratorlarga xabar yuborildi, tez orada tuzatiladi. Sabringiz uchun rahmat."
+
+msgid "Go"
+msgstr "Bajarish"
+
+msgid "Click here to select the objects across all pages"
+msgstr "Barcha sahifalardagi yozuvlarni tanlash uchun bosing"
+
+msgid "Select all %(total_count)s %(module_name)s"
+msgstr "Barcha %(total_count)s ta %(module_name)sni tanlash"
+
+msgid "Clear selection"
+msgstr "Tanlovni tozalash"
+
+msgid "Breadcrumbs"
+msgstr "Sahifa yo‘li"
+
+msgid "Models in the %(name)s application"
+msgstr "%(name)s ilovasidagi modellar"
+
+msgid "Model name"
+msgstr "Model nomi"
+
+msgid "Add link"
+msgstr "Qo‘shish havolasi"
+
+msgid "Change or view list link"
+msgstr "Ro‘yxatni ko‘rish yoki o‘zgartirish"
+
+msgid "You don’t have permission to view or edit anything."
+msgstr "Ko‘rish yoki tahrirlash uchun ruxsatingiz yo‘q."
+
+msgid "After you’ve created a user, you’ll be able to edit more user options."
+msgstr "Foydalanuvchi yaratilgach, uning boshqa sozlamalarini tahrirlashingiz mumkin."
+
+msgid "Error:"
+msgstr "Xatolik:"
+
+msgid "Set password"
+msgstr "Parol o‘rnatish"
+
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] "Quyidagi xatolarni tuzating."
+
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr "<strong>%(username)s</strong> foydalanuvchisi uchun yangi parol kiriting."
+
+msgid "This action will <strong>enable</strong> password-based authentication for this user."
+msgstr "Bu amal foydalanuvchi uchun parol orqali kirishni <strong>yoqadi</strong>."
+
+msgid "Disable password-based authentication"
+msgstr "Parol orqali kirishni o‘chirish"
+
+msgid "Enable password-based authentication"
+msgstr "Parol orqali kirishni yoqish"
+
+msgid "Skip to main content"
+msgstr "Asosiy mazmunga o‘tish"
+
+msgid "Add %(name)s"
+msgstr "%(name)s qo‘shish"
+
+msgid "History"
+msgstr "Tarix"
+
+msgid "Hide counts"
+msgstr "Sonlarni yashirish"
+
+msgid "Show counts"
+msgstr "Sonlarni ko‘rsatish"
+
+msgid "Clear all filters"
+msgstr "Barcha filtrlarni tozalash"
+
+msgid "Sorting priority: %(priority_number)s"
+msgstr "Saralash ustuvorligi: %(priority_number)s"
+
+msgid "Toggle sorting"
+msgstr "Saralashni almashtirish"
+
+msgid "Toggle theme (current theme: auto)"
+msgstr "Mavzuni almashtirish (joriy: avtomatik)"
+
+msgid "Toggle theme (current theme: light)"
+msgstr "Mavzuni almashtirish (joriy: yorug‘)"
+
+msgid "Toggle theme (current theme: dark)"
+msgstr "Mavzuni almashtirish (joriy: qorong‘i)"
+
+msgid "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting related objects, but your account doesn't have permission to delete the following types of objects:"
+msgstr "%(object_name)s “%(escaped_object)s”ni o‘chirish bog‘liq yozuvlarni ham o‘chiradi, ammo quyidagi yozuv turlarini o‘chirishga ruxsatingiz yo‘q:"
+
+msgid "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the following protected related objects:"
+msgstr "%(object_name)s “%(escaped_object)s”ni o‘chirish uchun quyidagi himoyalangan bog‘liq yozuvlarni o‘chirish kerak:"
+
+msgid "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? All of the following related items will be deleted:"
+msgstr "%(object_name)s “%(escaped_object)s”ni o‘chirishni tasdiqlaysizmi? Quyidagi bog‘liq ma’lumotlar ham o‘chiriladi:"
+
+msgid "Objects"
+msgstr "Yozuvlar"
+
+msgid "Yes, I’m sure"
+msgstr "Ha, tasdiqlayman"
+
+msgid "No, take me back"
+msgstr "Yo‘q, qaytish"
+
+msgid "Deleting the selected %(objects_name)s would result in deleting related objects, but your account doesn't have permission to delete the following types of objects:"
+msgstr "Tanlangan %(objects_name)sni o‘chirish bog‘liq yozuvlarni ham o‘chiradi, ammo quyidagi yozuv turlarini o‘chirishga ruxsatingiz yo‘q:"
+
+msgid "Deleting the selected %(objects_name)s would require deleting the following protected related objects:"
+msgstr "Tanlangan %(objects_name)sni o‘chirish uchun quyidagi himoyalangan bog‘liq yozuvlarni o‘chirish kerak:"
+
+msgid "Are you sure you want to delete the selected %(objects_name)s? All of the following objects and their related items will be deleted:"
+msgstr "Tanlangan %(objects_name)sni o‘chirishni tasdiqlaysizmi? Quyidagi ma’lumotlar va ularga bog‘liq yozuvlar ham o‘chiriladi:"
+
+msgid " By %(filter_title)s "
+msgstr " %(filter_title)s bo‘yicha "
+
+msgid "None available"
+msgstr "Mavjud emas"
+
+msgid "Added:"
+msgstr "Qo‘shildi:"
+
+msgid "Changed:"
+msgstr "O‘zgartirildi:"
+
+msgid "Deleted:"
+msgstr "O‘chirildi:"
+
+msgid "Unknown content"
+msgstr "Noma’lum mazmun"
+
+msgid "Something’s wrong with your database installation. Make sure the appropriate database tables have been created, and make sure the database is readable by the appropriate user."
+msgstr "Ma’lumotlar bazasini sozlashda xatolik bor. Kerakli jadvallar yaratilgani va foydalanuvchiga ularni o‘qish ruxsati berilganini tekshiring."
+
+msgid "You are authenticated as %(username)s, but are not authorized to access this page. Would you like to login to a different account?"
+msgstr "Siz %(username)s sifatida kirgansiz, ammo bu sahifaga ruxsatingiz yo‘q. Boshqa hisob bilan kirasizmi?"
+
+msgid "Forgotten your login credentials?"
+msgstr "Kirish ma’lumotlarini unutdingizmi?"
+
+msgid "Sidebar"
+msgstr "Yon menyu"
+
+msgid "Start typing to filter…"
+msgstr "Filtrlash uchun yozing…"
+
+msgid "Filter navigation items"
+msgstr "Menyu bo‘limlarini filtrlash"
+
+msgid "Date/time"
+msgstr "Sana va vaqt"
+
+msgid "User"
+msgstr "Foydalanuvchi"
+
+msgid "Action"
+msgstr "Amal"
+
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] "yozuv"
+
+msgid "This object doesn’t have a change history. It probably wasn’t added via this admin site."
+msgstr "Bu yozuvning o‘zgarishlar tarixi yo‘q. U boshqaruv paneli orqali qo‘shilmagan bo‘lishi mumkin."
+
+msgid "Show all"
+msgstr "Barchasini ko‘rsatish"
+
+msgid "Save"
+msgstr "Saqlash"
+
+msgid "Popup closing…"
+msgstr "Qo‘shimcha oyna yopilmoqda…"
+
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] "%(counter)s ta natija"
+
+msgid "%(full_result_count)s total"
+msgstr "jami %(full_result_count)s ta"
+
+msgid "Save as new"
+msgstr "Yangi yozuv sifatida saqlash"
+
+msgid "Save and add another"
+msgstr "Saqlash va yana qo‘shish"
+
+msgid "Save and continue editing"
+msgstr "Saqlash va tahrirlashni davom ettirish"
+
+msgid "Save and view"
+msgstr "Saqlash va ko‘rish"
+
+msgid "Close"
+msgstr "Yopish"
+
+msgid "Change selected %(model)s"
+msgstr "Tanlangan %(model)sni o‘zgartirish"
+
+msgid "Add another %(model)s"
+msgstr "Yana %(model)s qo‘shish"
+
+msgid "Delete selected %(model)s"
+msgstr "Tanlangan %(model)sni o‘chirish"
+
+msgid "View selected %(model)s"
+msgstr "Tanlangan %(model)sni ko‘rish"
+
+msgid "Thanks for spending some quality time with the web site today."
+msgstr "Saytdan foydalanganingiz uchun rahmat."
+
+msgid "Log in again"
+msgstr "Qayta kirish"
+
+msgid "Password change"
+msgstr "Parolni o‘zgartirish"
+
+msgid "Your password was changed."
+msgstr "Parolingiz o‘zgartirildi."
+
+msgid "Please enter your old password, for security’s sake, and then enter your new password twice so we can verify you typed it in correctly."
+msgstr "Xavfsizlik uchun avval eski parolni, so‘ng yangi parolni ikki marta kiriting."
+
+msgid "Change my password"
+msgstr "Parolimni o‘zgartirish"
+
+msgid "Password reset"
+msgstr "Parolni tiklash"
+
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "Parolingiz o‘rnatildi. Endi hisobingizga kirishingiz mumkin."
+
+msgid "Password reset confirmation"
+msgstr "Parolni tiklashni tasdiqlash"
+
+msgid "Please enter your new password twice so we can verify you typed it in correctly."
+msgstr "To‘g‘ri kiritilganini tekshirish uchun yangi parolni ikki marta kiriting."
+
+msgid "New password:"
+msgstr "Yangi parol:"
+
+msgid "Confirm password:"
+msgstr "Parolni tasdiqlang:"
+
+msgid "The password reset link was invalid, possibly because it has already been used.  Please request a new password reset."
+msgstr "Parolni tiklash havolasi yaroqsiz yoki ishlatilgan. Yangi havola so‘rang."
+
+msgid "We’ve emailed you instructions for setting your password, if an account exists with the email you entered. You should receive them shortly."
+msgstr "Kiritilgan manzilga tegishli hisob bo‘lsa, parolni tiklash ko‘rsatmalari yuborildi. Xat tez orada keladi."
+
+msgid "If you don’t receive an email, please make sure you’ve entered the address you registered with, and check your spam folder."
+msgstr "Xat kelmasa, ro‘yxatdan o‘tgan manzilingizni to‘g‘ri kiritganingizni va spam jildini tekshiring."
+
+msgid "You're receiving this email because you requested a password reset for your user account at %(site_name)s."
+msgstr "Siz %(site_name)s saytidagi hisobingiz parolini tiklashni so‘raganingiz uchun ushbu xat yuborildi."
+
+msgid "Please go to the following page and choose a new password:"
+msgstr "Quyidagi sahifaga o‘ting va yangi parol tanlang:"
+
+msgid "In case you’ve forgotten, you are:"
+msgstr "Eslatma, foydalanuvchi nomingiz:"
+
+msgid "Thanks for using our site!"
+msgstr "Saytimizdan foydalanganingiz uchun rahmat!"
+
+msgid "The %(site_name)s team"
+msgstr "%(site_name)s jamoasi"
+
+msgid "Forgotten your password? Enter your email address below, and we’ll email instructions for setting a new one."
+msgstr "Parolni unutdingizmi? Elektron pochta manzilingizni kiriting, yangi parol o‘rnatish ko‘rsatmalari yuboriladi."
+
+msgid "Email address:"
+msgstr "Elektron pochta manzili:"
+
+msgid "Select all objects on this page for an action"
+msgstr "Amal uchun sahifadagi barcha yozuvlarni tanlash"
+
+msgid "Select %s to change"
+msgstr "O‘zgartirish uchun %sni tanlang"
+
+msgid "Select %s to view"
+msgstr "Ko‘rish uchun %sni tanlang"
+
+msgid "Conflicting form data submitted. Please try again."
+msgstr "Forma ma’lumotlari bir-biriga zid. Qayta urinib ko‘ring."
+
+msgid "Password-based authentication was disabled."
+msgstr "Parol orqali kirish o‘chirildi."
+
+msgid "Set password: %s"
+msgstr "Parol o‘rnatish: %s"
+
+msgid "Authentication and Authorization"
+msgstr "Foydalanuvchilar va ruxsatlar"
+
+msgid "Reset password"
+msgstr "Parolni tiklash"
+
+msgid "Whether the user will be able to authenticate using a password or not. If disabled, they may still be able to authenticate using other backends, such as Single Sign-On or LDAP."
+msgstr "Foydalanuvchi parol bilan kira olishini belgilaydi. O‘chirilsa ham, sozlangan boshqa kirish usullari orqali kirishi mumkin."
+
+msgid "Password-based authentication"
+msgstr "Parol orqali kirish"
+
+msgid "Enabled"
+msgstr "Yoqilgan"
+
+msgid "Disabled"
+msgstr "O‘chirilgan"
+
+msgid "Raw passwords are not stored, so there is no way to see the user’s password."
+msgstr "Parollar ochiq ko‘rinishda saqlanmaydi, shu sababli foydalanuvchi parolini ko‘rib bo‘lmaydi."
+
+msgid "Enable password-based authentication for this user by setting a password."
+msgstr "Parol o‘rnatib, foydalanuvchi uchun parol orqali kirishni yoqing."
+
+msgid "Old password"
+msgstr "Eski parol"
+
+msgid "algorithm"
+msgstr "algoritm"
+
+msgid "iterations"
+msgstr "takrorlashlar"
+
+msgid "salt"
+msgstr "tasodifiy qo‘shimcha"
+
+msgid "hash"
+msgstr "xesh"
+
+msgid "variety"
+msgstr "tur"
+
+msgid "version"
+msgstr "versiya"
+
+msgid "memory cost"
+msgstr "xotira sarfi"
+
+msgid "time cost"
+msgstr "vaqt sarfi"
+
+msgid "parallelism"
+msgstr "parallellik"
+
+msgid "work factor"
+msgstr "ish koeffitsiyenti"
+
+msgid "checksum"
+msgstr "nazorat yig‘indisi"
+
+msgid "block size"
+msgstr "blok hajmi"
+
+msgid "name"
+msgstr "nomi"
+
+msgid "codename"
+msgstr "kod nomi"
+
+msgid "permission"
+msgstr "ruxsat"
+
+msgid "permissions"
+msgstr "ruxsatlar"
+
+msgid "group"
+msgstr "guruh"
+
+msgid "groups"
+msgstr "guruhlar"
+
+msgid "superuser status"
+msgstr "bosh administrator maqomi"
+
+msgid "Designates that this user has all permissions without explicitly assigning them."
+msgstr "Bu foydalanuvchiga barcha ruxsatlarni alohida belgilamasdan beradi."
+
+msgid "The groups this user belongs to. A user will get all permissions granted to each of their groups."
+msgstr "Foydalanuvchi a’zo bo‘lgan guruhlar. U ushbu guruhlarga berilgan barcha ruxsatlarga ega bo‘ladi."
+
+msgid "user permissions"
+msgstr "foydalanuvchi ruxsatlari"
+
+msgid "Specific permissions for this user."
+msgstr "Ushbu foydalanuvchiga berilgan alohida ruxsatlar."
+
+msgid "username"
+msgstr "foydalanuvchi nomi"
+
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr "Majburiy. Ko‘pi bilan 150 ta belgi. Faqat harflar, raqamlar va @/./+/-/_ belgilari."
+
+msgid "A user with that username already exists."
+msgstr "Bu nomli foydalanuvchi allaqachon mavjud."
+
+msgid "first name"
+msgstr "ismi"
+
+msgid "last name"
+msgstr "familiyasi"
+
+msgid "email address"
+msgstr "elektron pochta manzili"
+
+msgid "staff status"
+msgstr "xodim maqomi"
+
+msgid "Designates whether the user can log into this admin site."
+msgstr "Foydalanuvchi ushbu boshqaruv paneliga kira olishini belgilaydi."
+
+msgid "active"
+msgstr "faol"
+
+msgid "Designates whether this user should be treated as active. Unselect this instead of deleting accounts."
+msgstr "Foydalanuvchining faolligini belgilaydi. Hisobni o‘chirish o‘rniga ushbu belgini olib tashlang."
+
+msgid "date joined"
+msgstr "ro‘yxatdan o‘tgan sana"
+
+msgid "users"
+msgstr "foydalanuvchilar"
+
+msgid "This password is too short. It must contain at least %d character."
+msgid_plural "This password is too short. It must contain at least %d characters."
+msgstr[0] "Parol juda qisqa. U kamida %d ta belgidan iborat bo‘lishi kerak."
+
+msgid "Your password must contain at least %(min_length)d character."
+msgid_plural "Your password must contain at least %(min_length)d characters."
+msgstr[0] "Parol kamida %(min_length)d ta belgidan iborat bo‘lishi kerak."
+
+msgid "The password is too similar to the %(verbose_name)s."
+msgstr "Parol %(verbose_name)s maydoniga juda o‘xshash."
+
+msgid "Your password can’t be too similar to your other personal information."
+msgstr "Parol shaxsiy ma’lumotlaringizga juda o‘xshash bo‘lmasligi kerak."
+
+msgid "This password is too common."
+msgstr "Bu parol juda ko‘p ishlatiladi."
+
+msgid "Your password can’t be a commonly used password."
+msgstr "Parol ko‘p ishlatiladigan oddiy parol bo‘lmasligi kerak."
+
+msgid "This password is entirely numeric."
+msgstr "Bu parol faqat raqamlardan iborat."
+
+msgid "Your password can’t be entirely numeric."
+msgstr "Parol faqat raqamlardan iborat bo‘lmasligi kerak."
+
+msgid "Password reset on %(site_name)s"
+msgstr "%(site_name)s saytida parolni tiklash"
+
+msgid "Enter a valid username. This value may contain only unaccented lowercase a-z and uppercase A-Z letters, numbers, and @/./+/-/_ characters."
+msgstr "To‘g‘ri foydalanuvchi nomini kiriting. Faqat a-z, A-Z harflari, raqamlar va @/./+/-/_ belgilariga ruxsat beriladi."
+
+msgid "Enter a valid username. This value may contain only letters, numbers, and @/./+/-/_ characters."
+msgstr "To‘g‘ri foydalanuvchi nomini kiriting. Faqat harflar, raqamlar va @/./+/-/_ belgilariga ruxsat beriladi."
+
+msgid "Logged out"
+msgstr "Hisobdan chiqildi"
+
+msgid "Password reset sent"
+msgstr "Parolni tiklash xati yuborildi"
+
+msgid "Enter new password"
+msgstr "Yangi parolni kiriting"
+
+msgid "Password reset unsuccessful"
+msgstr "Parolni tiklab bo‘lmadi"
+
+msgid "Password reset complete"
+msgstr "Parol tiklandi"
+
+msgid "Password change successful"
+msgstr "Parol muvaffaqiyatli o‘zgartirildi"
+
+msgid "Enter a valid domain name."
+msgstr "To‘g‘ri domen nomini kiriting."
+
+msgid "Enter a valid %(protocol)s address."
+msgstr "To‘g‘ri %(protocol)s manzilini kiriting."
+
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Qiymat %(limit_value)s qadamiga karrali bo‘lsin."
+
+msgid "Ensure this value is a multiple of step size %(limit_value)s, starting from %(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr "Qiymat %(offset)s dan boshlanib %(limit_value)s qadamga mos bo‘lsin: %(offset)s, %(valid_value1)s, %(valid_value2)s va hokazo."
+
+msgid "Constraint “%(name)s” is violated."
+msgstr "“%(name)s” cheklovi buzildi."
+
+msgid "String (unlimited)"
+msgstr "Matn (cheklanmagan)"
+
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr "%(model)s uchun %(field)s maydonidagi %(value)r to‘g‘ri tanlov emas."
+
+msgid "This field is required."
+msgstr "Bu maydonni to‘ldiring."
+
+msgid "ManagementForm data is missing or has been tampered with. Missing fields: %(field_names)s. You may need to file a bug report if the issue persists."
+msgstr "Forma boshqaruv ma’lumotlari yo‘q yoki o‘zgartirilgan. Yetishmayotgan maydonlar: %(field_names)s. Xato takrorlansa, administratorga xabar bering."
+
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Ko‘pi bilan %(num)d ta forma kiriting."
+
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Kamida %(num)d ta forma kiriting."
+
+msgid "Monday"
+msgstr "Dushanba"
+
+msgid "Tuesday"
+msgstr "Seshanba"
+
+msgid "Wednesday"
+msgstr "Chorshanba"
+
+msgid "Thursday"
+msgstr "Payshanba"
+
+msgid "Friday"
+msgstr "Juma"
+
+msgid "Saturday"
+msgstr "Shanba"
+
+msgid "Sunday"
+msgstr "Yakshanba"
+
+msgid "%s selected option not visible"
+msgstr "Tanlangan %s ta variant ko‘rinmayapti"
+
+msgid "(click to clear)"
+msgstr "(tozalash uchun bosing)"
+
+msgid "Choose %s by selecting them and then select the \"Choose\" arrow button."
+msgstr "%sni belgilang va “Tanlash” strelkasini bosing."
+
+msgid "Choose all %s"
+msgstr "Barcha %sni tanlash"
+
+msgid "Choose selected %s"
+msgstr "Belgilangan %sni tanlash"
+
+msgid "Remove %s by selecting them and then select the \"Remove\" arrow button."
+msgstr "%sni belgilang va “Olib tashlash” strelkasini bosing."
+
+msgid "Remove all %s"
+msgstr "Barcha %sni olib tashlash"
+
+msgid "Remove selected %s"
+msgstr "Belgilangan %sni olib tashlash"
+
+msgid "Type into this box to filter down the list of selected %s."
+msgstr "Tanlangan %s ro‘yxatini filtrlash uchun shu maydonga yozing."
+
+msgid "You have selected an action, and you haven’t made any changes on individual fields. You’re probably looking for the Go button rather than the Save button."
+msgstr "Amal tanlangan, maydonlar o‘zgartirilmagan. Amalni bajarish uchun “Bajarish” tugmasini bosing."
+
+msgid "You have selected an action, but you haven’t saved your changes to individual fields yet. Please click OK to save. You’ll need to re-run the action."
+msgstr "Amal tanlangan, ammo maydonlardagi o‘zgarishlar saqlanmagan. Saqlash uchun tasdiqlang, keyin amalni yana bajaring."
+
+msgid "Users"
+msgstr "Foydalanuvchilar"
+
+msgid "Batch"
+msgstr "Partiya"
+
+msgid "Content Types"
+msgstr "Ma’lumot turlari"

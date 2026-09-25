@@ -1,0 +1,24 @@
+{% extends "admin/base.html" %}{% load i18n %}
+{% load static %}
+{% block title %}{{ title }} {% translate "· Apteka" %}{% endblock %}
+{% block dark-mode-vars %}{% endblock %}
+{% block responsive %}{{ block.super }}
+<link rel="stylesheet" href="{% static 'catalog/app.css' %}">
+<link rel="stylesheet" href="{% static 'catalog/admin.css' %}">
+{% endblock %}
+{% block header %}
+<header class="header">
+  <a class="brand" href="{% url 'admin:index' %}"><span class="logo">+</span> apteka<span class="brand-dot">.</span></a>
+  {% if has_permission %}<nav aria-label="{% translate "Asosiy menyu" %}">
+    <a href="{% url 'catalog:home' %}">{% translate "Katalog" %}</a>
+    <a href="{% url 'admin:index' %}">{% translate "Admin panel" %}</a>
+    <a href="{% url 'admin:password_change' %}">{% translate "Parolni o‘zgartirish" %}</a>
+    <span class="username">{{ user.username }}</span>
+    <form method="post" action="{% url 'admin:logout' %}">{% csrf_token %}<button class="text-button" type="submit">{% translate "Chiqish" %}</button></form>
+  </nav>{% endif %}
+  {% include "language_switcher.html" %}
+</header>
+{% endblock %}
+{% block pretitle %}{% if not is_popup and has_permission %}{% include "admin/pharmacy_navigation.html" %}{% endif %}{% endblock %}
+{% block nav-sidebar %}{% endblock %}
+{% block footer %}<div class="container footer">{% translate "Apteka ichki katalogi" %} <span>{% translate "Kerakli dori. Aniq joylashuv." %}</span></div>{% endblock %}

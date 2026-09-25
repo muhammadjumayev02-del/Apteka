@@ -1,0 +1,14 @@
+{% extends 'base.html' %}{% load i18n %}
+{% block title %}{% translate "Kirish · Apteka" %}{% endblock %}
+{% block content %}
+<section class="panel login">
+  <p class="eyebrow">{% translate "XODIMLAR UCHUN" %}</p><h1>{% translate "Xush kelibsiz" %}</h1>
+  <p class="muted">{% translate "Dorilar katalogiga kirish uchun hisobingizdan foydalaning." %}</p>
+  <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="hidden" name="next" value="{{ next }}">
+    <button class="button" type="submit">{% translate "Kirish →" %}</button>
+  </form>
+  <p class="muted">{% translate "Hisobni apteka administratori yaratadi." %}</p>
+</section>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% load i18n %}
+{% load static %}
+<!doctype html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% translate "Apteka · Dori qidirish" %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'catalog/app.css' %}">
+  <script src="{% static 'catalog/app.js' %}" defer></script>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="{% url 'catalog:home' %}"><span class="logo">+</span> apteka<span class="brand-dot">.</span></a>
+  <nav aria-label="{% translate "Asosiy menyu" %}">
+    {% if user.is_authenticated %}<a href="{% url 'catalog:shifts' %}">{% translate "Smenalar" %}</a>
+      {% if user.is_superuser %}<a href="{% url 'catalog:create' %}">{% translate "+ Dori qo‘shish" %}</a>{% endif %}
+      {% if user.is_active and user.is_superuser %}<a href="{% url 'admin:index' %}">{% translate "Admin panel" %}</a>{% endif %}
+      <span class="username">{{ user.username }}</span>
+      <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="text-button">{% translate "Chiqish" %}</button></form>
+    {% endif %}
+  </nav>
+  {% include "language_switcher.html" %}
+</header>
+<main class="container">
+  {% if user.is_authenticated %}<nav class="page-path" aria-label="{% translate "Sahifa yo‘li" %}"><a href="{% url 'catalog:home' %}">{% translate "Dori qidirish" %}</a> / <span aria-current="page">{% with section=request.resolver_match.url_name %}{% if section == 'home' %}{% translate "Dorilar va qoldiq" %}{% elif section == 'sell' or section == 'sale_confirm' %}{% translate "Sotuv qilish" %}{% elif section == 'sale_cancel' %}{% translate "Sotuvni bekor qilish" %}{% elif section == 'transfer' %}{% translate "Polkalar orasida ko‘chirish" %}{% elif section == 'shifts' or section == 'shift_detail' or section == 'schedule_create' %}{% translate "Smenalar" %}{% else %}{% translate "Dori ma’lumotlari" %}{% endif %}{% endwith %}</span></nav>{% endif %}
+  {% for message in messages %}<p class="notice" role="status">{{ message }}</p>{% endfor %}
+  {% block content %}{% endblock %}
+</main>
+<footer class="container footer">{% translate "Apteka ichki katalogi" %} <span>{% translate "Kerakli dori. Aniq joylashuv." %}</span></footer>
+</body>
+</html>

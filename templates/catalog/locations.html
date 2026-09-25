@@ -1,0 +1,6 @@
+{% extends 'base.html' %}{% load i18n %}{% block content %}
+<a class="back" href="{{ medicine.get_absolute_url }}">{% translate "← Dori sahifasi" %}</a>
+<h1>{% translate "Qayerda turibdi?" %}</h1><h2>{{ medicine.name }}</h2>
+<p>{{ medicine.dosage }} · {{ medicine.form }} · {{ medicine.package_size|default:_("Qadoq hajmi kiritilmagan") }}</p>
+{% for place in places %}<section class="location-panel"><h2>{{ place.department }} → {{ place.shelf }}{% translate "-polka →" %} {{ place.row }}{% translate "-qator" %}</h2><p class="total">{{ place.quantity }} {% translate "pachka" %}</p><p>{% translate "Partiya:" %} {{ place.batch.number }}</p></section>{% empty %}<p>{% translate "Hozir mavjud qoldiq yo‘q." %}</p>{% endfor %}
+{% endblock %}

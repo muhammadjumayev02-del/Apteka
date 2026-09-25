@@ -1,0 +1,946 @@
+# Apteka interface translations; database content stays unchanged.
+
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\nLanguage: ru\nPlural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "%(batch)s · %(place)s · %(quantity)s pachka"
+msgstr "%(batch)s · %(place)s · %(quantity)s уп."
+
+msgid "%(department)s → %(shelf)s-polka → %(row)s-qator"
+msgstr "%(department)s → полка %(shelf)s → ряд %(row)s"
+
+msgid "%(hours)s soat %(minutes)s daqiqa"
+msgstr "%(hours)s ч %(minutes)s мин"
+
+msgid "%(unknown_expiry_count)s ta qoldig‘i bor partiyada yaroqlilik sanasi kiritilmagan."
+msgstr "Количество партий с остатком без срока годности: %(unknown_expiry_count)s."
+
+msgid "* (majburiy)"
+msgstr "* (обязательно)"
+
+msgid "+ Dori qo‘shish"
+msgstr "+ Добавить лекарство"
+
+msgid "+ Yana joylashuv"
+msgstr "+ Ещё одно место"
+
+msgid "-polka →"
+msgstr "-полка →"
+
+msgid "-qator"
+msgstr "-ряд"
+
+msgid "1. Dorini tanlash →"
+msgstr "1. Выбор лекарства →"
+
+msgid "2. Partiya va pachkalar soni"
+msgstr "2. Партия и количество упаковок"
+
+msgid "APTEKA EGASI UCHUN"
+msgstr "ДЛЯ ВЛАДЕЛЬЦА АПТЕКИ"
+
+msgid "APTEKADAGI JOYLASHUVI"
+msgstr "РАСПОЛОЖЕНИЕ В АПТЕКЕ"
+
+msgid "Admin panel"
+msgstr "Панель управления"
+
+msgid "Admin panel · Apteka"
+msgstr "Панель управления · Apteka"
+
+msgid "Aniq moslik topilmadi. Ehtimoliy natijalar — nomi, dozasi va qadoq hajmini tekshirib, o‘zingiz tanlang."
+msgstr "Точного совпадения нет. Проверьте название, дозировку и размер упаковки и выберите подходящий результат."
+
+msgid "Apteka boshqaruvi"
+msgstr "Управление аптекой"
+
+msgid "Apteka ichki katalogi"
+msgstr "Внутренний каталог аптеки"
+
+msgid "Apteka · Dori qidirish"
+msgstr "Apteka · Поиск лекарств"
+
+msgid "Aptekachi"
+msgstr "Фармацевт"
+
+msgid "Asosiy ma’lumotlar"
+msgstr "Основные сведения"
+
+msgid "Asosiy menyu"
+msgstr "Главное меню"
+
+msgid "Avval smenani boshlang."
+msgstr "Сначала начните смену."
+
+msgid "Barcha dorilar"
+msgstr "Все лекарства"
+
+msgid "Barcha joylardagi jami qoldiq"
+msgstr "Общий остаток во всех местах:"
+
+msgid "Barcha joylardagi jami qoldiq %(threshold)s pachkadan kam."
+msgstr "Общий остаток во всех местах — менее %(threshold)s уп."
+
+msgid "Barcha kunlar bo‘yicha oxirgi 10 ta sotuv. Bekor qilinganlari alohida belgilangan."
+msgstr "Последние 10 продаж за все дни. Отменённые продажи отмечены отдельно."
+
+msgid "Barcha smenalar"
+msgstr "Все смены"
+
+msgid "Bekor qilgan xodim"
+msgstr "Сотрудник, отменивший продажу"
+
+msgid "Bekor qilingan sotuvlar barcha ko‘rsatkichlardan chiqarilgan."
+msgstr "Отменённые продажи исключены из всех показателей."
+
+msgid "Bekor qilingan sotuvlar hisobga olinmaydi."
+msgstr "Отменённые продажи не учитываются."
+
+msgid "Bekor qilingan vaqt"
+msgstr "Время отмены"
+
+msgid "Bekor qilingan — tushumga kiritilmagan"
+msgstr "Отменено — не включено в выручку"
+
+msgid "Bekor qilingan:"
+msgstr "Отменено:"
+
+msgid "Belgilangan chegaradan kam qolgan dorilar yo‘q."
+msgstr "Лекарств с остатком ниже установленного порога нет."
+
+msgid "Bir pachka narxi"
+msgstr "Цена за упаковку"
+
+msgid "Bir pachka:"
+msgstr "Одна упаковка:"
+
+msgid "Bir partiya uchun joylashuv takrorlangan."
+msgstr "Место для одной партии указано повторно."
+
+msgid "Bosh sahifaga qaytish"
+msgstr "Вернуться на главную"
+
+msgid "Boshlangan vaqt"
+msgstr "Время начала"
+
+msgid "Boshlanish va tugash sanasi hamda vaqtini Toshkent vaqti bilan kiriting. Tungi smena uchun tugash sanasini keyingi kun qilib belgilang."
+msgstr "Укажите дату и время начала и окончания по ташкентскому времени. Для ночной смены укажите окончание на следующий день."
+
+msgid "Boshlanmagan rejalashtirilgan smenalar yo‘q."
+msgstr "Запланированных смен, которые ещё не начались, нет."
+
+msgid "Boshlanmagan — reja vaqti o‘tgan"
+msgstr "Не началась — плановое время прошло"
+
+msgid "Boshqaruv amallari"
+msgstr "Действия управления"
+
+msgid "Boshqaruv faqat administrator uchun."
+msgstr "Управление доступно только администратору."
+
+msgid "Boshqaruv paneli"
+msgstr "Панель управления"
+
+msgid "Bo‘lim"
+msgstr "Отдел"
+
+msgid "Bu hisob faol emas."
+msgstr "Эта учётная запись неактивна."
+
+msgid "Bu hisobga katalogga kirish ruxsati berilmagan."
+msgstr "У этой учётной записи нет доступа к каталогу."
+
+msgid "Bu joyda faqat %(quantity)s pachka bor. Kamroq son kiriting."
+msgstr "Здесь есть только %(quantity)s уп. Укажите меньшее количество."
+
+msgid "Bu joyda qoldiq yetarli emas: faqat %(quantity)s pachka bor. Kamroq son kiriting."
+msgstr "Здесь недостаточный остаток: только %(quantity)s уп. Укажите меньшее количество."
+
+msgid "Bu maydonni to‘ldiring."
+msgstr "Заполните это поле."
+
+msgid "Bu smena allaqachon boshlangan yoki yakunlangan."
+msgstr "Эта смена уже началась или завершена."
+
+msgid "Bu xodimning shu vaqtda boshqa smenasi bor."
+msgstr "У этого сотрудника уже есть другая смена на это время."
+
+msgid "Bugun eng ko‘p sotilgan dorilar"
+msgstr "Самые продаваемые лекарства сегодня"
+
+msgid "Bugun hali tasdiqlangan, bekor qilinmagan sotuv yo‘q."
+msgstr "Сегодня ещё нет подтверждённых неотменённых продаж."
+
+msgid "Bugun uchun jadval yoki haqiqiy smena yo‘q."
+msgstr "На сегодня нет запланированных или фактических смен."
+
+msgid "Bugun va keyingi"
+msgstr "Сегодня и в ближайшие"
+
+msgid "Bugun va keyingi %(expiry_days)s kun ichida. Faqat qoldig‘i bor partiyalar."
+msgstr "Сегодня и в ближайшие %(expiry_days)s дней. Только партии с остатком."
+
+msgid "Bugunga to‘g‘ri keladigan rejalar va haqiqiy smenalar, jumladan davom etayotgan tungi smenalar."
+msgstr "Запланированные и фактические смены на сегодня, включая продолжающиеся ночные смены."
+
+msgid "Bugungi sotuv natijalari"
+msgstr "Результаты продаж за сегодня"
+
+msgid "Bugungi sotuvlar hali yo‘q."
+msgstr "Сегодня продаж ещё нет."
+
+msgid "Bugungi xodimlar smenalari"
+msgstr "Смены сотрудников сегодня"
+
+msgid "Chiqish"
+msgstr "Выйти"
+
+msgid "DORI MA’LUMOTLARI"
+msgstr "СВЕДЕНИЯ О ЛЕКАРСТВЕ"
+
+msgid "DORILAR KATALOGI"
+msgstr "КАТАЛОГ ЛЕКАРСТВ"
+
+msgid "Davom etmoqda"
+msgstr "Продолжается"
+
+msgid "Dori"
+msgstr "Лекарство"
+
+msgid "Dori haqida"
+msgstr "О лекарстве"
+
+msgid "Dori ma’lumotlari"
+msgstr "Сведения о лекарстве"
+
+msgid "Dori ma’lumotlari saqlandi."
+msgstr "Сведения о лекарстве сохранены."
+
+msgid "Dori nomi"
+msgstr "Название лекарства"
+
+msgid "Dori nomi yoki faol modda"
+msgstr "Название лекарства или действующее вещество"
+
+msgid "Dori nomini yozing…"
+msgstr "Введите название лекарства…"
+
+msgid "Dori qidirish"
+msgstr "Поиск лекарств"
+
+msgid "Dori qidirishga qaytish"
+msgstr "Вернуться к поиску лекарств"
+
+msgid "Dori qo‘shish"
+msgstr "Добавить лекарство"
+
+msgid "Dori shakli"
+msgstr "Лекарственная форма"
+
+msgid "Dori topilmadi"
+msgstr "Лекарство не найдено"
+
+msgid "Dorilar"
+msgstr "Лекарства"
+
+msgid "Dorilar katalogi"
+msgstr "Каталог лекарств"
+
+msgid "Dorilar katalogiga kirish uchun hisobingizdan foydalaning."
+msgstr "Войдите в свою учётную запись для доступа к каталогу лекарств."
+
+msgid "Dorilar va ombor"
+msgstr "Лекарства и склад"
+
+msgid "Dorilar va qoldiq"
+msgstr "Лекарства и остатки"
+
+msgid "Dorini tahrirlash"
+msgstr "Изменить лекарство"
+
+msgid "Dorini toping."
+msgstr "Найдите лекарство."
+
+msgid "Dozasi"
+msgstr "Дозировка"
+
+msgid "Dozasi:"
+msgstr "Дозировка:"
+
+msgid "Foydalanuvchi nomi"
+msgstr "Имя пользователя"
+
+msgid "Foydalanuvchi nomi yoki parol noto‘g‘ri."
+msgstr "Неверное имя пользователя или пароль."
+
+msgid "Ha, sotuvni bekor qilish"
+msgstr "Да, отменить продажу"
+
+msgid "Hali boshlanmagan"
+msgstr "Ещё не началась"
+
+msgid "Hali ko‘chirish yo‘q."
+msgstr "Перемещений ещё нет."
+
+msgid "Hali smena yo‘q."
+msgstr "Смен ещё нет."
+
+msgid "Hali sotuvlar yo‘q."
+msgstr "Продаж ещё нет."
+
+msgid "Haqiqiy boshlanish:"
+msgstr "Фактическое начало:"
+
+msgid "Haqiqiy yakun:"
+msgstr "Фактическое окончание:"
+
+msgid "Haqiqiy:"
+msgstr "Фактически:"
+
+msgid "Har bir partiya va joydagi pachkalar sonini alohida kiriting. Yangi partiyani Boshqaruv → Partiyalar orqali qo‘shing. Kamida bitta joylashuv kerak."
+msgstr "Укажите количество упаковок отдельно для каждой партии и места. Новую партию добавьте через Управление → Партии. Необходимо хотя бы одно место."
+
+msgid "Hisobni apteka administratori yaratadi."
+msgstr "Учётную запись создаёт администратор аптеки."
+
+msgid "Hisobotlar"
+msgstr "Отчёты"
+
+msgid "Hozir mavjud qoldiq yo‘q."
+msgstr "Сейчас остатков нет."
+
+msgid "Hozir omborda mavjud emas."
+msgstr "Сейчас отсутствует на складе."
+
+msgid "Ish jadvali"
+msgstr "График работы"
+
+msgid "Ish jadvali saqlandi."
+msgstr "График работы сохранён."
+
+msgid "Ish jadvali va smena natijalari"
+msgstr "График работы и результаты смен"
+
+msgid "Ish jadvalini belgilash"
+msgstr "Составить график работы"
+
+msgid "Ish jadvallari"
+msgstr "Графики работы"
+
+msgid "Ishlagan vaqt:"
+msgstr "Отработанное время:"
+
+msgid "Ishlamoqda"
+msgstr "Работает"
+
+msgid "Jadvaldan tashqari"
+msgstr "Вне графика"
+
+msgid "Jami mavjud"
+msgstr "Всего в наличии"
+
+msgid "Jami narx"
+msgstr "Общая стоимость"
+
+msgid "Jami narxni ko‘rish"
+msgstr "Посмотреть общую стоимость"
+
+msgid "Jami tushum"
+msgstr "Общая выручка"
+
+msgid "Jami:"
+msgstr "Итого:"
+
+msgid "Joyini darhol biling."
+msgstr "Сразу узнайте расположение."
+
+msgid "Joylashuv"
+msgstr "Расположение"
+
+msgid "Joylashuv hali kiritilmagan."
+msgstr "Расположение ещё не указано."
+
+msgid "Joylashuvlar"
+msgstr "Расположения"
+
+msgid "Joylashuvlar va qoldiq"
+msgstr "Расположения и остатки"
+
+msgid "Kam qolgan dorilar"
+msgstr "Лекарства с малым остатком"
+
+msgid "Kamida %(limit_value)s kiriting."
+msgstr "Введите не менее %(limit_value)s."
+
+msgid "Katalog"
+msgstr "Каталог"
+
+msgid "Kerakli dori. Aniq joylashuv."
+msgstr "Нужное лекарство. Точное расположение."
+
+msgid "Kerakli xodim guruhiga qo‘shish uchun administratorga murojaat qiling."
+msgstr "Обратитесь к администратору для добавления в нужную группу сотрудников."
+
+msgid "Keyingi →"
+msgstr "Далее →"
+
+msgid "Kirish · Apteka"
+msgstr "Вход · Apteka"
+
+msgid "Kirish →"
+msgstr "Войти →"
+
+msgid "Kiritilmagan"
+msgstr "Не указано"
+
+msgid "Kiritilmagan — admin orqali to‘ldiring"
+msgstr "Не указано — заполните через панель управления"
+
+msgid "Ko‘chirish"
+msgstr "Перемещение"
+
+msgid "Ko‘chirish #%(id)s · %(name)s"
+msgstr "Перемещение №%(id)s · %(name)s"
+
+msgid "Ko‘chirish tarixi"
+msgstr "История перемещений"
+
+msgid "Ko‘pi bilan %(limit_value)s kiriting."
+msgstr "Введите не более %(limit_value)s."
+
+msgid "Ko‘rish: %(model)s"
+msgstr "Просмотр: %(model)s"
+
+msgid "MUDDATI O‘TGAN ·"
+msgstr "ПРОСРОЧЕНО ·"
+
+msgid "Mahsulot yoki narx o‘zgargan. Sotuvni qaytadan tekshiring."
+msgstr "Товар или цена изменились. Проверьте продажу заново."
+
+msgid "Mahsulotni tekshiring. Bu tekshiruv tibbiy tavsiya yoki dori almashtirish tavsiyasi emas."
+msgstr "Проверьте товар. Эта проверка не является медицинской рекомендацией или рекомендацией по замене лекарства."
+
+msgid "Manba (yo‘riqnoma nomi, versiyasi yoki havola)"
+msgstr "Источник (название инструкции, версия или ссылка)"
+
+msgid "Manba joyda qoldiq yetarli emas."
+msgstr "В исходном месте недостаточный остаток."
+
+msgid "Manba partiya va joy"
+msgstr "Исходная партия и место"
+
+msgid "Manba va yangi joy bir xil bo‘lishi mumkin emas."
+msgstr "Исходное и новое место не могут совпадать."
+
+msgid "Manba:"
+msgstr "Источник:"
+
+msgid "Mavjud soni"
+msgstr "Количество в наличии"
+
+msgid "Muddati o‘tgan partiyalar"
+msgstr "Просроченные партии"
+
+msgid "Muddati yaqinlashayotgan partiyalar"
+msgstr "Партии с истекающим сроком годности"
+
+msgid "Muddati yaqinlashayotgan partiyalar yo‘q."
+msgstr "Партий с истекающим сроком годности нет."
+
+msgid "Muqobil nomlar"
+msgstr "Альтернативные названия"
+
+msgid "Narxi (so‘m)"
+msgstr "Цена (сум)"
+
+msgid "Natija sahifalari"
+msgstr "Страницы результатов"
+
+msgid "Natijalar yangilandi."
+msgstr "Результаты обновлены."
+
+msgid "Nomini tekshiring yoki faol modda bo‘yicha qidiring."
+msgstr "Проверьте название или выполните поиск по действующему веществу."
+
+msgid "Nomining bir qismini yozish kifoya · Natijalar yozganingizda yangilanadi"
+msgstr "Достаточно части названия · Результаты обновляются при вводе"
+
+msgid "Ochiq"
+msgstr "Открыта"
+
+msgid "Oldingi joy"
+msgstr "Предыдущее место"
+
+msgid "Oxirgi yangilanish"
+msgstr "Последнее обновление"
+
+msgid "Oxirgi yangilanish:"
+msgstr "Последнее обновление:"
+
+msgid "O‘chirish: %(model)s"
+msgstr "Удаление: %(model)s"
+
+msgid "O‘zgartirish: %(model)s"
+msgstr "Изменение: %(model)s"
+
+msgid "Pachkalar ko‘chirildi. Umumiy qoldiq o‘zgarmadi."
+msgstr "Упаковки перемещены. Общий остаток не изменился."
+
+msgid "Pachkalar soni"
+msgstr "Количество упаковок"
+
+msgid "Pachkalar soni bo‘yicha birinchi 5 ta dori."
+msgstr "Первые 5 лекарств по количеству упаковок."
+
+msgid "Pachkalarni ko‘chirish"
+msgstr "Переместить упаковки"
+
+msgid "Parol"
+msgstr "Пароль"
+
+msgid "Parolni o‘zgartirish"
+msgstr "Изменить пароль"
+
+msgid "Partiya"
+msgstr "Партия"
+
+msgid "Partiya (bo‘sh bo‘lsa boshlang‘ich partiya)"
+msgstr "Партия (если не выбрана — начальная партия)"
+
+msgid "Partiya raqami"
+msgstr "Номер партии"
+
+msgid "Partiya shu doriga tegishli bo‘lishi kerak."
+msgstr "Партия должна относиться к этому лекарству."
+
+msgid "Partiya va joylashuv"
+msgstr "Партия и расположение"
+
+msgid "Partiya yoki joylashuv o‘zgargan. Sotuvni qaytadan tekshiring."
+msgstr "Партия или расположение изменились. Проверьте продажу заново."
+
+msgid "Partiya:"
+msgstr "Партия:"
+
+msgid "Partiyalar"
+msgstr "Партии"
+
+msgid "Partiyalarni tekshirish"
+msgstr "Проверить партии"
+
+msgid "Polka"
+msgstr "Полка"
+
+msgid "Polkalar orasida ko‘chirish"
+msgstr "Перемещение между полками"
+
+msgid "Polkalar orasida ko‘chirishlar"
+msgstr "Перемещения между полками"
+
+msgid "Qadoq hajmi"
+msgstr "Размер упаковки"
+
+msgid "Qadoq hajmi kiritilmagan"
+msgstr "Размер упаковки не указан"
+
+msgid "Qadoq hajmi:"
+msgstr "Размер упаковки:"
+
+msgid "Qator"
+msgstr "Ряд"
+
+msgid "Qayerda turibdi?"
+msgstr "Где находится?"
+
+msgid "Qayerdan topish mumkin?"
+msgstr "Где можно найти?"
+
+msgid "Qidirilmoqda…"
+msgstr "Поиск…"
+
+msgid "Qidirish"
+msgstr "Поиск"
+
+msgid "Qidiruv natijalari"
+msgstr "Результаты поиска"
+
+msgid "Qidiruv yangilanmadi. Qayta urinib ko‘ring yoki Qidirish tugmasini bosing."
+msgstr "Результаты не обновились. Повторите попытку или нажмите «Поиск»."
+
+msgid "Qoldig‘i bor muddati o‘tgan partiyalar yo‘q."
+msgstr "Просроченных партий с остатком нет."
+
+msgid "Qoldiq (pachka)"
+msgstr "Остаток (упаковки)"
+
+msgid "Qoldiq yetarli emas. Sotuvni qaytadan tekshiring."
+msgstr "Недостаточный остаток. Проверьте продажу заново."
+
+msgid "Qoldiqni ko‘rish"
+msgstr "Посмотреть остатки"
+
+msgid "Qoldiqni tahrirlash"
+msgstr "Изменить остатки"
+
+msgid "Qo‘llanish holatlari"
+msgstr "Показания к применению"
+
+msgid "Qo‘llashdan oldin rasmiy yo‘riqnoma va mutaxassis tavsiyasiga amal qiling"
+msgstr "Перед применением следуйте официальной инструкции и рекомендациям специалиста"
+
+msgid "Qo‘shimcha ma’lumotlar"
+msgstr "Дополнительные сведения"
+
+msgid "Qo‘shimcha ma’lumotlar (ixtiyoriy)"
+msgstr "Дополнительные сведения (необязательно)"
+
+msgid "Qo‘shish: %(model)s"
+msgstr "Добавление: %(model)s"
+
+msgid "Quyidagi partiyalarning yaroqlilik muddati o‘tgan. Faqat qoldig‘i bor partiyalar."
+msgstr "Срок годности следующих партий истёк. Показаны только партии с остатком."
+
+msgid "Rasmiy ma’lumot hali kiritilmagan."
+msgstr "Официальные сведения ещё не указаны."
+
+msgid "Rasmiy yo‘riqnomaga ko‘ra qo‘llanishi"
+msgstr "Применение согласно официальной инструкции"
+
+msgid "Reja:"
+msgstr "План:"
+
+msgid "Rejalashtirilgan"
+msgstr "Запланирована"
+
+msgid "Rejalashtirilgan boshlanish"
+msgstr "Плановое начало"
+
+msgid "Rejalashtirilgan smenalar"
+msgstr "Запланированные смены"
+
+msgid "Rejalashtirilgan tugash"
+msgstr "Плановое окончание"
+
+msgid "Ro‘yxatdan tanlang."
+msgstr "Выберите из списка."
+
+msgid "Ruxsat guruhlari"
+msgstr "Группы доступа"
+
+msgid "Ruxsat yetarli emas"
+msgstr "Недостаточно прав"
+
+msgid "Sahifa topilmadi"
+msgstr "Страница не найдена"
+
+msgid "Sahifa yo‘li"
+msgstr "Путь страницы"
+
+msgid "Sana kelajakda bo‘lishi mumkin emas."
+msgstr "Дата не может быть в будущем."
+
+msgid "Sana va vaqt"
+msgstr "Дата и время"
+
+msgid "Saqlash"
+msgstr "Сохранить"
+
+msgid "Savdo nomi"
+msgstr "Торговое название"
+
+msgid "Savdo nomi, faol modda yoki muqobil nom bo‘yicha qidiring — lotin va kirill yozuvida."
+msgstr "Ищите по торговому названию, действующему веществу или альтернативному названию — латиницей и кириллицей."
+
+msgid "Shakli:"
+msgstr "Форма:"
+
+msgid "Smena"
+msgstr "Смена"
+
+msgid "Smena #%(id)s · %(name)s"
+msgstr "Смена №%(id)s · %(name)s"
+
+msgid "Smena boshlandi. Sotuv qilish mumkin."
+msgstr "Смена началась. Можно выполнять продажи."
+
+msgid "Smena natijalari"
+msgstr "Результаты смен"
+
+msgid "Smena noto‘g‘ri tanlangan."
+msgstr "Неверно выбрана смена."
+
+msgid "Smena sotuvlarini ko‘rish →"
+msgstr "Посмотреть продажи смены →"
+
+msgid "Smena tafsilotlari"
+msgstr "Подробности смены"
+
+msgid "Smena yakunlandi."
+msgstr "Смена завершена."
+
+msgid "Smena yopilgan. Yangi smena boshlang."
+msgstr "Смена закрыта. Начните новую смену."
+
+msgid "Smenalar"
+msgstr "Смены"
+
+msgid "Smenani boshlash"
+msgstr "Начать смену"
+
+msgid "Smenani boshlash (jadvaldan tashqari)"
+msgstr "Начать смену (вне графика)"
+
+msgid "Smenani boshlash / ko‘rish"
+msgstr "Начать / посмотреть смену"
+
+msgid "Smenani yakunlash"
+msgstr "Завершить смену"
+
+msgid "Sotiladigan pachkalar soni"
+msgstr "Количество продаваемых упаковок"
+
+msgid "Sotiladigan pachkalar soni:"
+msgstr "Количество продаваемых упаковок:"
+
+msgid "Sotilgan pachkalar"
+msgstr "Проданные упаковки"
+
+msgid "Sotish"
+msgstr "Продать"
+
+msgid "Sotuv"
+msgstr "Продажа"
+
+msgid "Sotuv #%(id)s · %(name)s"
+msgstr "Продажа №%(id)s · %(name)s"
+
+msgid "Sotuv bekor qilindi. Pachkalar qoldiqqa qaytarildi."
+msgstr "Продажа отменена. Упаковки возвращены в остаток."
+
+msgid "Sotuv qilish"
+msgstr "Оформить продажу"
+
+msgid "Sotuv qilish uchun avval smenani boshlang."
+msgstr "Для продажи сначала начните смену."
+
+msgid "Sotuv qilish: dorini qidiring va uning «Sotuv qilish» tugmasini bosing."
+msgstr "Для продажи найдите лекарство и нажмите «Оформить продажу»."
+
+msgid "Sotuv tasdiqlandi."
+msgstr "Продажа подтверждена."
+
+msgid "Sotuv va ko‘chirish tarixi"
+msgstr "История продаж и перемещений"
+
+msgid "Sotuvdan oldin admin qadoq hajmini kiritishi kerak."
+msgstr "Перед продажей администратор должен указать размер упаковки."
+
+msgid "Sotuvdan oldingi tekshiruv"
+msgstr "Проверка перед продажей"
+
+msgid "Sotuvlar"
+msgstr "Продажи"
+
+msgid "Sotuvlar yo‘q."
+msgstr "Продаж нет."
+
+msgid "Sotuvni bekor qilasizmi?"
+msgstr "Отменить продажу?"
+
+msgid "Sotuvni bekor qilish"
+msgstr "Отмена продажи"
+
+msgid "Sotuvni bekor qilish va qoldiqni qaytarish"
+msgstr "Отменить продажу и вернуть остаток"
+
+msgid "Sotuvni tasdiqlash"
+msgstr "Подтвердить продажу"
+
+msgid "So‘nggi sotuvlar"
+msgstr "Последние продажи"
+
+msgid "Tahrirlash"
+msgstr "Изменить"
+
+msgid "Tarixga bog‘langan joyni o‘chirish yoki almashtirish mumkin emas. Ko‘chirish sahifasidan foydalaning."
+msgstr "Нельзя удалить или изменить место, связанное с историей. Используйте страницу перемещения."
+
+msgid "Tarkib va qo‘llanishni faqat rasmiy yo‘riqnomadan kiriting. Manba va tekshirilgan sanani ko‘rsating."
+msgstr "Указывайте состав и применение только из официальной инструкции. Укажите источник и дату проверки."
+
+msgid "Tarkibi / faol moddalar"
+msgstr "Состав / действующие вещества"
+
+msgid "Tasdiqlangan"
+msgstr "Подтверждено"
+
+msgid "Tasdiqlasangiz, pachkalar oldingi joyiga qaytariladi va bu sotuv tushumdan chiqariladi."
+msgstr "При подтверждении упаковки вернутся на прежнее место, а продажа будет исключена из выручки."
+
+msgid "Tasdiqlash muddati tugagan yoki ma’lumot o‘zgargan. Sotuvni qaytadan tayyorlang."
+msgstr "Срок подтверждения истёк или данные изменились. Подготовьте продажу заново."
+
+msgid "Tekshirilgan sanani kiriting."
+msgstr "Укажите дату проверки."
+
+msgid "Tezkor amallar"
+msgstr "Быстрые действия"
+
+msgid "Tibbiy ma’lumot tekshirilgan sana"
+msgstr "Дата проверки медицинских сведений"
+
+msgid "Tibbiy ma’lumot tekshirilgan sana:"
+msgstr "Дата проверки медицинских сведений:"
+
+msgid "Tibbiy ma’lumot uchun rasmiy manbani kiriting."
+msgstr "Укажите официальный источник медицинских сведений."
+
+msgid "To‘g‘ri qiymat kiriting."
+msgstr "Введите корректное значение."
+
+msgid "Tugash vaqti boshlanishdan keyin bo‘lishi kerak."
+msgstr "Время окончания должно быть позже начала."
+
+msgid "VAKOLATLI XODIM"
+msgstr "УПОЛНОМОЧЕННЫЙ СОТРУДНИК"
+
+msgid "Vaqtlar Toshkent vaqti bilan ko‘rsatilgan."
+msgstr "Время указано по Ташкенту."
+
+msgid "XAYOLIY NAMUNA. Bu haqiqiy dori emas; nomi, dozasi va narxi faqat saytni sinash uchun."
+msgstr "ВЫМЫШЛЕННЫЙ ПРИМЕР. Это не настоящее лекарство; название, дозировка и цена предназначены только для тестирования сайта."
+
+msgid "XODIMLAR UCHUN"
+msgstr "ДЛЯ СОТРУДНИКОВ"
+
+msgid "Xayoliy namuna"
+msgstr "Вымышленный пример"
+
+msgid "Xodim"
+msgstr "Сотрудник"
+
+msgid "Xodimlar"
+msgstr "Сотрудники"
+
+msgid "Xodimlar va ish vaqti"
+msgstr "Сотрудники и рабочее время"
+
+msgid "Xodimlar va smenalar"
+msgstr "Сотрудники и смены"
+
+msgid "Xush kelibsiz"
+msgstr "Добро пожаловать"
+
+msgid "Yakunlangan"
+msgstr "Завершена"
+
+msgid "Yakunlangan vaqt"
+msgstr "Время завершения"
+
+msgid "Yangi bo‘lim"
+msgstr "Новый отдел"
+
+msgid "Yangi joy"
+msgstr "Новое место"
+
+msgid "Yangi joylashuv"
+msgstr "Новое расположение"
+
+msgid "Yangi partiya"
+msgstr "Новая партия"
+
+msgid "Yangi polka"
+msgstr "Новая полка"
+
+msgid "Yangi qator"
+msgstr "Новый ряд"
+
+msgid "Yaroqlilik sanasi"
+msgstr "Срок годности"
+
+msgid "Yo‘q, qaytish"
+msgstr "Нет, вернуться"
+
+msgid "Yo‘riqnoma ma’lumotlari"
+msgstr "Сведения из инструкции"
+
+msgid "kun ichida. Faqat qoldig‘i bor partiyalar."
+msgstr "дней. Только партии с остатком."
+
+msgid "pachka"
+msgstr "уп."
+
+msgid "pachka ·"
+msgstr "уп. ·"
+
+msgid "pachkadan kam."
+msgstr "уп. — ниже порога."
+
+msgid "smenasi"
+msgstr "— смена"
+
+msgid "sotuv ·"
+msgstr "продаж ·"
+
+msgid "so‘m"
+msgstr "сум"
+
+msgid "so‘m ·"
+msgstr "сум ·"
+
+msgid "ta dori"
+msgstr "лекарств"
+
+msgid "ta qoldig‘i bor partiyada yaroqlilik sanasi kiritilmagan."
+msgstr "партий с остатком без указанного срока годности."
+
+msgid "ta sotuv"
+msgid_plural "ta sotuv"
+msgstr[0] "продажа"
+msgstr[1] "продажи"
+msgstr[2] "продаж"
+
+msgid "· Apteka"
+msgstr "· Apteka"
+
+msgid "· Bu joyda qolmagan"
+msgstr "· В этом месте остатка нет"
+
+msgid "· Toshkent vaqti bilan"
+msgstr "· По ташкентскому времени"
+
+msgid "← Dori sahifasi"
+msgstr "← Страница лекарства"
+
+msgid "← Katalogga qaytish"
+msgstr "← Вернуться к каталогу"
+
+msgid "← Oldingi"
+msgstr "← Назад"
+
+msgid "← Qaytish va o‘zgartirish"
+msgstr "← Вернуться и изменить"
+
+msgid "← Qidiruvga qaytish"
+msgstr "← Вернуться к поиску"
+
+msgid "← Smena sotuvlariga qaytish"
+msgstr "← Вернуться к продажам смены"
+
+msgid "← Smenalar"
+msgstr "← Смены"
+
+msgid "→ 3. Tasdiqlash"
+msgstr "→ 3. Подтверждение"
+
+msgid "Sotuvdan oldin partiyaning yaroqlilik sanasini kiriting."
+msgstr "Перед продажей укажите срок годности партии."
+
+msgid "Partiyaning yaroqlilik muddati o‘tgan. Sotish mumkin emas."
+msgstr "Срок годности партии истёк. Продажа запрещена."
+
+msgid "Bu sotuv allaqachon bekor qilingan."
+msgstr "Эта продажа уже отменена."
+
+msgid "Qoldiq yoki joylashuv o‘zgargan. Sahifani yangilab, qaytadan kiriting."
+msgstr "Остаток или расположение изменились. Обновите страницу и введите данные заново."
