@@ -43,7 +43,7 @@ class CatalogTests(TestCase):
             "places-0-stock_snapshot": PlacementForm(instance=Placement.objects.get(pk=self.place.pk)).initial["stock_snapshot"],
             "places-1-stock_snapshot": PlacementForm(instance=self.medicine.placements.exclude(pk=self.place.pk).get()).initial["stock_snapshot"],
             "places-0-id": str(self.place.pk), "places-0-department": "Yangi bo‘lim",
-            "places-0-shelf": "5", "places-0-row": "4", "places-0-quantity": "12",
+            "places-0-shelf": "5", "places-0-row": "4", "places-0-quantity": "4",
             "places-1-id": str(self.medicine.placements.exclude(pk=self.place.pk).get().pk),
             "places-1-department": "Zaxira", "places-1-shelf": "1",
             "places-1-row": "1", "places-1-quantity": "6",
@@ -81,7 +81,7 @@ class CatalogTests(TestCase):
         self.assertEqual(self.medicine.name, "Xayoliy Alfa")
         self.assertEqual(self.client.get("/admin/").status_code, 403)
 
-    def test_editor_can_update_price_stock_and_location(self):
+    def test_editor_can_update_price_and_location_without_changing_stock(self):
         self.client.force_login(self.editor)
         response = self.client.post(reverse("catalog:edit", args=[self.medicine.pk]), self.payload())
         self.assertRedirects(response, self.medicine.get_absolute_url())
@@ -89,7 +89,7 @@ class CatalogTests(TestCase):
         self.place.refresh_from_db()
         self.assertEqual(self.medicine.price, Decimal("15000.50"))
         self.assertEqual((self.place.department, self.place.shelf, self.place.row, self.place.quantity),
-                         ("Yangi bo‘lim", 5, 4, 12))
+                         ("Yangi bo‘lim", 5, 4, 4))
         self.assertContains(self.client.get("/", {"q": "yangilangan"}), self.medicine.name)
         self.assertNotContains(self.client.get("/", {"q": "alfa"}), self.medicine.name)
 

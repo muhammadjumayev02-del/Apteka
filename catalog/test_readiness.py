@@ -91,7 +91,7 @@ class ConcurrentSalesTests(TransactionTestCase):
         self.place = Placement.objects.create(medicine=self.med, batch=self.batch, department='A', shelf=1, row=1, quantity=3)
         self.data = [dict(medicine=self.med.pk, placement=self.place.pk, batch=self.batch.pk,
                           location=self.place.location_key, product=snapshot(self.med), price=str(self.med.price),
-                          quantity=2, shift=Shift.objects.create(user=user).pk, token=str(uuid.uuid4())) for user in self.users]
+                          quantity=2, payment_method='cash', shift=Shift.objects.create(user=user).pk, token=str(uuid.uuid4())) for user in self.users]
 
     def tearDown(self):
         if connections['default'].vendor == 'sqlite':
@@ -128,6 +128,6 @@ class ConcurrentSalesTests(TransactionTestCase):
 
     def test_simultaneous_cancellation_returns_stock_once(self):
         sale = confirm_sale(self.users[0], self.data[0])
-        self.assertCountEqual(self.parallel(lambda index: cancel_sale(sale, self.users[index])), [True, False])
+        self.assertCountEqual(self.parallel(lambda index: cancel_sale(sale, self.users[0])), [True, False])
         self.place.refresh_from_db()
         self.assertEqual(self.place.quantity, 3)

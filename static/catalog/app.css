@@ -12,3 +12,5 @@
 
 .language-switcher{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.language-switcher button{background:none;border:0;color:var(--teal);cursor:pointer;font:inherit;padding:4px}.language-switcher button[aria-pressed="true"]{font-weight:700;text-decoration:underline}
 @media(max-width:800px){.header{flex-wrap:wrap}}
+
+.header nav a.active {background:#16834b;color:white;border-radius:8px;padding:8px;}

@@ -3,6 +3,8 @@ from .models import normalize
 
 
 def search(items, query):
+    if query and items.filter(barcode=query).exists():
+        return items.filter(barcode=query), False
     words = normalize(query).split()
     if not words:
         return items, False

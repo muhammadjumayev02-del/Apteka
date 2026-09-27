@@ -61,7 +61,8 @@ if (saleTotal) {
       return;
     }
     const total = cents * BigInt(value);
-    saleTotal.textContent = `${total / 100n},${String(total % 100n).padStart(2, "0")}`;
+    const separator = document.documentElement.lang === "en" ? "." : ",";
+    saleTotal.textContent = `${total / 100n}${separator}${String(total % 100n).padStart(2, "0")}`;
   }
   quantity.addEventListener("input", updateTotal);
   updateTotal();

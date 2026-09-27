@@ -1,10 +1,11 @@
 {% extends 'base.html' %}{% load i18n %}{% block content %}
 <h1>{% translate "Sotuvdan oldingi tekshiruv" %}</h1>
+<p>{% translate "To‘lov usuli" %}: {{ payment_label }}</p>
 <section class="panel"><h2>{{ data.product.name }}</h2>
 <p>{% translate "Dozasi:" %} <strong>{{ data.product.dosage }}</strong></p>
 <p>{% translate "Shakli:" %} <strong>{{ data.product.form }}</strong></p>
 <p>{% translate "Qadoq hajmi:" %} <strong>{{ data.product.package_size|default:_("Kiritilmagan — admin orqali to‘ldiring") }}</strong></p>
-<p>{% translate "Partiya:" %} {{ place.batch.number }} · {{ place }}</p>
+<p>{% translate "Partiya:" %} {{ place.batch.number_display }} · {{ place }}</p>
 <p>{% translate "Sotiladigan pachkalar soni:" %} <strong>{{ data.quantity }}</strong></p>
 <p>{% translate "Bir pachka:" %} {{ data.price }} {% translate "so‘m" %}</p><h2>{% translate "Jami:" %} {{ total|floatformat:2 }} {% translate "so‘m" %}</h2>
 <p>{% translate "Mahsulotni tekshiring. Bu tekshiruv tibbiy tavsiya yoki dori almashtirish tavsiyasi emas." %}</p>

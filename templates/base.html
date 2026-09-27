@@ -14,7 +14,7 @@
 <header class="header">
   <a class="brand" href="{% url 'catalog:home' %}"><span class="logo">+</span> apteka<span class="brand-dot">.</span></a>
   <nav aria-label="{% translate "Asosiy menyu" %}">
-    {% if user.is_authenticated %}<a href="{% url 'catalog:shifts' %}">{% translate "Smenalar" %}</a>
+    {% if user.is_authenticated %}<a class="{% if request.resolver_match.url_name == 'cart' %}active{% endif %}" href="{% url 'catalog:cart' %}">{% translate "Savat" %}</a>{% if user.is_superuser %}<a class="{% if request.resolver_match.url_name == 'reports' %}active{% endif %}" href="{% url 'catalog:reports' %}">{% translate "Hisobotlar" %}</a>{% endif %}<a class="{% if request.resolver_match.url_name == 'shifts' or request.resolver_match.url_name == 'shift_detail' or request.resolver_match.url_name == 'schedule_create' %}active{% endif %}" href="{% url 'catalog:shifts' %}">{% translate "Smenalar" %}</a>
       {% if user.is_superuser %}<a href="{% url 'catalog:create' %}">{% translate "+ Dori qo‘shish" %}</a>{% endif %}
       {% if user.is_active and user.is_superuser %}<a href="{% url 'admin:index' %}">{% translate "Admin panel" %}</a>{% endif %}
       <span class="username">{{ user.username }}</span>

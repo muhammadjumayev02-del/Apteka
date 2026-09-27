@@ -17,7 +17,7 @@ class NavigationParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag == 'nav':
-            self.in_navigation = attrs.get('aria-label') == 'Boshqaruv amallari'
+            self.in_navigation = 'dashboard-actions' in attrs.get('class', '').split()
         elif tag == 'a' and self.in_navigation:
             self.links.append(attrs)
 
@@ -60,6 +60,7 @@ class AdminThemeTests(TestCase):
                 'catalog_batch_changelist', 'catalog_batch_add',
                 'auth_user_changelist', 'catalog_shift_changelist',
                 'catalog_sale_changelist', 'catalog_stocktransfer_changelist',
+                'catalog_stockreceipt_changelist', 'catalog_placement_changelist',
             )
         ])
         for link in links:

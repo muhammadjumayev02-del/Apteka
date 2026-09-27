@@ -25,8 +25,7 @@ bash scripts/run_local.sh
 Mavjud `.env` bo‘lsa, uning ustiga nusxalamang, mavjud kalitni saqlang.
 Keyingi ishga tushirishlarda loyiha papkasida faqat `bash scripts/run_local.sh`
 yozing: skript `.env`ni yuklaydi va serverni `127.0.0.1:8000`da ochadi.
-Oddiy `manage.py` buyruqlari `.env`ni avtomatik yuklamaydi: ular uchun har yangi
-terminalda `set -a; source .env; set +a` bajaring.
+`manage.py` buyruqlari loyiha `.env` faylini avtomatik yuklaydi.
 Lokal `DJANGO_DEBUG=1` HTTPS redirect, HSTS va secure cookie talabini o‘chiradi.
 Productionda `DJANGO_DEBUG=0` (standart) ularni qayta yoqadi; lokal skriptni ishlatmang.
 `.env` Gitdan chiqarilgan va `600` huquq bilan faqat egasiga ochiq bo‘lishi kerak.
@@ -40,7 +39,8 @@ Partiyalar → dori/partiya raqami/yaroqlilik sanasi; keyin dori joylashuvini o�
 partiyaga bog‘lang. Narx bir pachka uchun, dori darajasida: uning barcha partiyalarida
 bir xil. Har bir joylashuvdagi son alohida hisoblanadi. Sana noma’lum partiyalar
 saqlanadi, sotuvdan oldin sana kiritilishi kerak. Bugungi sana amal qiladi;
-bugundan oldingi sana bloklanadi. Xodim: smenani boshlash → qidirish → sotish →
+bugundan oldingi sana bloklanadi. Admin xodimga jadval yaratadi va Smenalar sahifasida smenani ochadi/yopadi.
+Xodim: qidirish → sotish →
 partiya va pachka soni → tekshirish → tasdiqlash. Bekor qilish tarixi o‘chirilmaydi.
 
 ## Server (Linux, HTTPS, Nginx, Gunicorn)
@@ -173,3 +173,31 @@ Manbalar: [Django deployment checklist](https://docs.djangoproject.com/en/5.2/ho
   Bu haqiqiy domen, TLS sertifikati yoki server o‘rnatilganini anglatmaydi.
 
 Batafsil tekshiruv: [reports/readiness-review-2026-09-25.md](reports/readiness-review-2026-09-25.md).
+
+
+## 2026-09-27 yangilanishi
+
+Migratsiyadan oldin `python manage.py backup_sqlite /xavfsiz/joy/apteka-backup.sqlite3`
+bilan nusxa oling. `python manage.py migrate` mavjud dori, qoldiq va sotuvlarni saqlaydi.
+0009 migratsiya joriy qoldiqni boshlang‘ich hisob qoldig‘i sifatida yozadi; bu eski
+haqiqiy kirimlar tarixi emas. Eski kelgan sanalar noma’lum (`NULL`) qoladi, admin
+hujjatdan tekshirib kiritadi. Partiya kirim soni — shu boshlang‘ich qoldiq va yangi
+kirimlar yig‘indisi. Migratsiyadan oldingi sotuvlarni bu songa qayta qo‘shmang.
+
+Yangi kirim: Admin → Kirimlar → Qo‘shish; joylashuv, son va kelgan sanani kiriting.
+Yangi joylashuvni dori tahririda yarating; keyingi qoldiq o‘zgarishlari kirim,
+sotuv, bekor qilish yoki ko‘chirish orqali bajariladi. Kirim tarixi o‘zgartirilmaydi.
+Ishlab chiqaruvchi shtrix kodini dori kartasiga aynan qutidagi ko‘rinishda kiriting
+(boshidagi nollar saqlanadi). Klaviatura kabi ishlaydigan skaner katalog qidiruviga
+kod yozadi, Enter qidiradi. Qurilma ishlamasa nom/faol modda orqali qidiring.
+
+Bir nechta dori: har birining Sotuv qilish oynasida partiya va sonni tanlab
+Savatga qo‘shish; Savat → Sotuvni tasdiqlash. Barcha qatorlar bitta tranzaksiyada
+saqlanadi. Narx, joy yoki qoldiq o‘zgarsa savatni tozalab qayta yig‘ing. Chekning
+istalgan qatoridan bekor qilish butun chekni bekor qiladi va barcha qoldiqlarni
+bir marta tiklaydi. Eski bitta dorili sotuvlar o‘z holicha ishlaydi.
+
+Hisobotlar sanalarni Toshkent vaqti bilan, ikkala chegarani ham qo‘shib hisoblaydi.
+Bekor qilingan cheklar tushumdan chiqariladi. CSV foydalanuvchi matnidagi elektron
+jadval formulalarini matn sifatida chiqaradi. Runserver faqat lokal tekshirish uchun;
+u ommaviy production server emas.

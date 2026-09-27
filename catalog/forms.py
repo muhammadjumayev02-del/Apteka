@@ -3,7 +3,7 @@ from django import forms
 from django.core import signing
 from django.contrib.auth.forms import AuthenticationForm
 from django.forms import inlineformset_factory
-from .models import Medicine, Placement, Batch
+from .models import Medicine, Placement, Batch, Sale
 from .roles import can_view_catalog
 
 
@@ -41,7 +41,7 @@ class SimpleFormMixin:
 class MedicineForm(SimpleFormMixin, forms.ModelForm):
     class Meta:
         model = Medicine
-        fields = ["name", "dosage", "form", "package_size", "price", "alternative_names", "active_ingredients", "indications",
+        fields = ["name", "barcode", "dosage", "form", "package_size", "price", "alternative_names", "active_ingredients", "indications",
                   "source", "reviewed_on", "is_demo"]
         widgets = {
             "reviewed_on": forms.DateInput(format="%Y-%m-%d", attrs={"type": "date"}),
@@ -67,6 +67,8 @@ class PlacementForm(SimpleFormMixin, forms.ModelForm):
                 saved = None
             if saved != self.snapshot(self.instance):
                 raise forms.ValidationError(gettext_lazy('Qoldiq yoki joylashuv o‘zgargan. Sahifani yangilab, qaytadan kiriting.'))
+        if self.instance.pk and 'quantity' in self.changed_data:
+            raise forms.ValidationError(gettext_lazy('Qoldiqni o‘zgartirish uchun kirim yoki sotuv amalidan foydalaning.'))
         return data
 
     class Meta:
@@ -100,7 +102,7 @@ class PlacementSet(forms.BaseInlineFormSet):
             if not data:
                 continue
             instance = form.instance
-            used = instance.pk and (instance.sale_set.exists() or instance.outgoing_transfers.exists() or instance.incoming_transfers.exists())
+            used = instance.pk and (instance.sale_set.exists() or instance.outgoing_transfers.exists() or instance.incoming_transfers.exists() or instance.stockreceipt_set.exists())
             if used and (data.get('DELETE') or any(k in form.changed_data for k in ('batch', 'department', 'shelf', 'row'))):
                 raise forms.ValidationError(gettext_lazy('Tarixga bog‘langan joyni o‘chirish yoki almashtirish mumkin emas. Ko‘chirish sahifasidan foydalaning.'))
             if data.get('DELETE'):
@@ -120,6 +122,9 @@ PlacementFormSet = inlineformset_factory(
 
 
 class SaleForm(SimpleFormMixin, forms.Form):
+    payment_method = forms.ChoiceField(label=gettext_lazy('To‘lov usuli'),
+        choices=[('', '---------'), *[(v, label) for v, label in Sale.PaymentMethod.choices if v != 'unknown']])
+
     placement = forms.ModelChoiceField(label=gettext_lazy("Partiya va joylashuv"), queryset=Placement.objects.none())
     quantity = forms.IntegerField(label=gettext_lazy("Sotiladigan pachkalar soni"), min_value=1, max_value=1000000)
 
@@ -127,7 +132,7 @@ class SaleForm(SimpleFormMixin, forms.Form):
         super().__init__(*args, **kwargs)
         self.medicine = medicine
         self.fields['placement'].queryset = medicine.placements.filter(quantity__gt=0).select_related('batch')
-        self.fields['placement'].label_from_instance = lambda p: gettext_lazy('%(batch)s · %(place)s · %(quantity)s pachka') % {'batch': p.batch.number, 'place': p, 'quantity': p.quantity}
+        self.fields['placement'].label_from_instance = lambda p: gettext_lazy('%(batch)s · %(place)s · %(quantity)s pachka') % {'batch': p.batch.number_display, 'place': p, 'quantity': p.quantity}
 
     def clean(self):
         data = super().clean()
@@ -155,7 +160,7 @@ class TransferForm(SimpleFormMixin, forms.Form):
     def __init__(self, *args, medicine, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['source'].queryset = medicine.placements.filter(quantity__gt=0).select_related('batch')
-        self.fields['source'].label_from_instance = lambda p: gettext_lazy('%(batch)s · %(place)s · %(quantity)s pachka') % {'batch': p.batch.number, 'place': p, 'quantity': p.quantity}
+        self.fields['source'].label_from_instance = lambda p: gettext_lazy('%(batch)s · %(place)s · %(quantity)s pachka') % {'batch': p.batch.number_display, 'place': p, 'quantity': p.quantity}
 
 
     def clean(self):

@@ -7,6 +7,7 @@
     <div class="card-top"><span class="pill">{{ medicine.form }}</span>{% if medicine.is_demo %}<span class="demo">{% translate "Xayoliy namuna" %}</span>{% endif %}</div>
     <h3><a href="{{ medicine.get_absolute_url }}">{{ medicine.name }}</a></h3><p class="muted">{{ medicine.dosage }} · {{ medicine.package_size|default:_("Qadoq hajmi kiritilmagan") }}</p>
     <div class="card-bottom"><strong>{{ medicine.price|floatformat:2 }} <small>{% translate "so‘m" %}</small></strong><span class="{% if medicine.total %}stock{% else %}muted{% endif %}">{{ medicine.total }} {% translate "pachka" %}</span></div>
+    {% for place in medicine.placements.all %}{% if place.quantity %}<p>{{ place }} · {{ place.batch.number_display }} · {{ place.quantity }} {% translate "pachka" %}</p>{% endif %}{% endfor %}
     <a class="button" href="{% url 'catalog:sell' medicine.pk %}">{% translate "Sotuv qilish" %}</a>
     <a class="button secondary" href="{% url 'catalog:locations' medicine.pk %}">{% translate "Qayerda turibdi?" %}</a>
   </article>

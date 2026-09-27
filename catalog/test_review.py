@@ -35,7 +35,7 @@ class ReviewTests(TestCase):
 
     def test_empty_sale_post_without_shift_is_validation_error(self):
         response = self.client.post(reverse('catalog:sell', args=[self.med.pk]), {})
-        self.assertContains(response, 'Avval smenani boshlang')
+        self.assertContains(response, 'Sotuv uchun smenani admin ochishi kerak.')
         self.assertFalse(Sale.objects.exists())
 
     def test_stale_admin_and_catalog_forms_cannot_restore_sold_stock(self):

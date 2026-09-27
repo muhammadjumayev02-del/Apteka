@@ -944,3 +944,87 @@ msgstr "Эта продажа уже отменена."
 
 msgid "Qoldiq yoki joylashuv o‘zgargan. Sahifani yangilab, qaytadan kiriting."
 msgstr "Остаток или расположение изменились. Обновите страницу и введите данные заново."
+
+msgid "Ishlab chiqaruvchi shtrix kodi"
+msgstr "Штрихкод производителя"
+
+msgid "Kelgan sana"
+msgstr "Дата поступления"
+
+msgid "Chek raqami"
+msgstr "Номер чека"
+
+msgid "Kirim soni"
+msgstr "Количество поступления"
+
+msgid "Kirim"
+msgstr "Поступление"
+
+msgid "Kirimlar"
+msgstr "Поступления"
+
+msgid "Boshlang‘ich qoldiq"
+msgstr "Начальный остаток"
+
+msgid "Savat"
+msgstr "Корзина"
+
+msgid "Savatga qo‘shish"
+msgstr "Добавить в корзину"
+
+msgid "Savatni tozalash"
+msgstr "Очистить корзину"
+
+msgid "Savat bo‘sh yoki juda katta."
+msgstr "Корзина пуста или содержит слишком много позиций."
+
+msgid "Boshlanish sanasi"
+msgstr "Начальная дата"
+
+msgid "Tugash sanasi"
+msgstr "Конечная дата"
+
+msgid "Ko‘rish"
+msgstr "Показать"
+
+msgid "CSV yuklab olish"
+msgstr "Скачать CSV"
+
+msgid "Qoldiqni o‘zgartirish uchun kirim yoki sotuv amalidan foydalaning."
+msgstr "Для изменения остатка используйте поступление или продажу."
+
+msgid "Shtrix kodni skanerlang yoki dori nomini yozing."
+msgstr "Отсканируйте штрихкод или введите название лекарства."
+
+msgid "Sotuv uchun smenani admin ochishi kerak."
+msgstr "Для продажи администратор должен открыть смену."
+
+msgid "Noma’lum"
+msgstr "Неизвестно"
+
+msgid "Naqd pul"
+msgstr "Наличные"
+
+msgid "Bank kartasi"
+msgstr "Банковская карта"
+
+msgid "To‘lov usuli"
+msgstr "Способ оплаты"
+
+msgid "To‘lov usulini tanlang."
+msgstr "Выберите способ оплаты."
+
+msgid "Naqd pul tushumi"
+msgstr "Наличная выручка"
+
+msgid "Umumiy tushum"
+msgstr "Общая выручка"
+
+msgid "Noma’lum to‘lovlar umumiy tushumga kiradi, naqd tushumga kirmaydi."
+msgstr "Платежи с неизвестным способом включены в общую выручку, но не в наличную."
+
+msgid "Sotuvlar soni chek bo‘yicha hisoblanadi."
+msgstr "Продажи подсчитываются по чекам."
+
+msgid "Boshlang‘ich partiya"
+msgstr "Начальная партия"

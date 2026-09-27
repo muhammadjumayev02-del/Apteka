@@ -3,6 +3,8 @@ from . import views
 
 app_name = "catalog"
 urlpatterns = [
+    path("savat/", views.cart, name="cart"),
+    path("hisobotlar/", views.reports, name="reports"),
     path("smenalar/jadval/yangi/", views.schedule_create, name="schedule_create"),
     path("smenalar/", views.shifts, name="shifts"),
     path("smenalar/<int:pk>/", views.shift_detail, name="shift_detail"),

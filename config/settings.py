@@ -71,7 +71,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 LANGUAGE_CODE = "uz"
-LANGUAGES = [("uz", "O‘zbekcha"), ("ru", "Русский")]
+LANGUAGES = [("uz", "O‘zbekcha"), ("ru", "Русский"), ("en", "English")]
 LOCALE_PATHS = [BASE_DIR / "locale"]
 TIME_ZONE = "Asia/Tashkent"
 USE_I18N = True

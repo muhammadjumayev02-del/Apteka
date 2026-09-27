@@ -20,6 +20,7 @@ def normalize(text):
 
 class Medicine(models.Model):
     name = models.CharField(gettext_lazy("Savdo nomi"), max_length=180)
+    barcode = models.CharField(gettext_lazy("Ishlab chiqaruvchi shtrix kodi"), max_length=64, null=True, blank=True, unique=True)
     dosage = models.CharField(gettext_lazy("Dozasi"), max_length=80)
     form = models.CharField(gettext_lazy("Dori shakli"), max_length=80)
     package_size = models.CharField(gettext_lazy("Qadoq hajmi"), max_length=120, blank=True)
@@ -59,6 +60,7 @@ class Medicine(models.Model):
             raise ValidationError(errors)
 
     def save(self, *args, **kwargs):
+        self.barcode = self.barcode.strip() or None if self.barcode else None
         self.search_text = normalize(f"{self.name} {self.active_ingredients} {self.alternative_names}")
         self.full_clean()
         if kwargs.get("update_fields") is not None:
@@ -68,6 +70,7 @@ class Medicine(models.Model):
 
 class Batch(models.Model):
     medicine = models.ForeignKey(Medicine, on_delete=models.CASCADE, related_name="batches", verbose_name=gettext_lazy("Dori"))
+    received_on = models.DateField(gettext_lazy("Kelgan sana"), null=True, blank=True)
     number = models.CharField(gettext_lazy("Partiya raqami"), max_length=120)
     expires_on = models.DateField(gettext_lazy("Yaroqlilik sanasi"), null=True, blank=True)
 
@@ -77,7 +80,11 @@ class Batch(models.Model):
         constraints = [models.UniqueConstraint(fields=["medicine", "number"], name="unique_batch")]
 
     def __str__(self):
-        return f"{self.medicine} / {self.number}"
+        return f"{self.medicine} / {self.number_display}"
+
+    @property
+    def number_display(self):
+        return gettext_lazy('Boshlang‘ich partiya') if self.number == 'Boshlang‘ich partiya' else self.number
 
 
 class Placement(models.Model):
@@ -86,6 +93,7 @@ class Placement(models.Model):
     department = models.CharField(gettext_lazy("Bo‘lim"), max_length=120)
     shelf = models.PositiveSmallIntegerField(gettext_lazy("Polka"), validators=[MinValueValidator(1)])
     row = models.PositiveSmallIntegerField(gettext_lazy("Qator"), validators=[MinValueValidator(1)])
+    opening_quantity = models.PositiveIntegerField(gettext_lazy("Boshlang‘ich qoldiq"), default=0, editable=False)
     quantity = models.PositiveIntegerField(gettext_lazy("Mavjud soni"), default=0)
 
     class Meta:
@@ -112,6 +120,8 @@ class Placement(models.Model):
             raise ValidationError({"batch": gettext_lazy("Partiya shu doriga tegishli bo‘lishi kerak.")})
 
     def save(self, *args, **kwargs):
+        if self._state.adding:
+            self.opening_quantity = self.quantity
         if not self.batch_id:
             self.batch, _ = Batch.objects.get_or_create(medicine_id=self.medicine_id, number="Boshlang‘ich partiya")
         self.clean()
@@ -162,6 +172,15 @@ class Shift(models.Model):
 
 
 class Sale(models.Model):
+    class PaymentMethod(models.TextChoices):
+        UNKNOWN = 'unknown', gettext_lazy('Noma’lum')
+        CASH = 'cash', gettext_lazy('Naqd pul')
+        CARD = 'card', gettext_lazy('Bank kartasi')
+
+    payment_method = models.CharField(gettext_lazy('To‘lov usuli'), max_length=10,
+                                      choices=PaymentMethod.choices, default=PaymentMethod.UNKNOWN)
+
+    order_token = models.UUIDField(null=True, blank=True, db_index=True, verbose_name=gettext_lazy("Chek raqami"))
     token = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     shift = models.ForeignKey(Shift, on_delete=models.PROTECT, related_name="sales", verbose_name=gettext_lazy("Smena"))
     placement = models.ForeignKey(Placement, on_delete=models.PROTECT, verbose_name=gettext_lazy("Partiya va joylashuv"))
@@ -220,3 +239,23 @@ class StockTransfer(models.Model):
         verbose_name_plural = gettext_lazy("Polkalar orasida ko‘chirishlar")
         ordering = ["-created_at", "-pk"]
         constraints = [models.CheckConstraint(condition=models.Q(quantity__gt=0), name="positive_transfer")]
+
+
+class StockReceipt(models.Model):
+    placement = models.ForeignKey(Placement, on_delete=models.PROTECT, verbose_name=gettext_lazy("Partiya va joylashuv"))
+    quantity = models.PositiveIntegerField(gettext_lazy("Kirim soni"), validators=[MinValueValidator(1)])
+    received_on = models.DateField(gettext_lazy("Kelgan sana"), default=timezone.localdate)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT, verbose_name=gettext_lazy("Xodim"))
+    created_at = models.DateTimeField(gettext_lazy("Sana va vaqt"), auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.placement} · {self.quantity}"
+
+    def clean(self):
+        if self.received_on and self.received_on > timezone.localdate():
+            raise ValidationError({'received_on': gettext_lazy('Sana kelajakda bo‘lishi mumkin emas.')})
+
+    class Meta:
+        verbose_name = gettext_lazy("Kirim")
+        verbose_name_plural = gettext_lazy("Kirimlar")
+        constraints = [models.CheckConstraint(condition=models.Q(quantity__gt=0), name="positive_receipt")]

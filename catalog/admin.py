@@ -30,6 +30,8 @@ class SuperuserAdminSite(admin.AdminSite):
                 ('catalog_shift', 'shifts'),
                 ('catalog_sale', 'sales'),
                 ('catalog_stocktransfer', 'transfers'),
+                ('catalog_stockreceipt', 'receipts'),
+                ('catalog_placement', 'locations'),
             )
             for action in ('changelist', 'add', 'change', 'history', 'delete')
         }
@@ -152,8 +154,18 @@ site.index_title = gettext_lazy("Boshqaruv paneli")
 
 @admin.register(Batch, site=site)
 class BatchAdmin(admin.ModelAdmin):
-    list_display = ['medicine', 'number', 'expires_on']
+    list_display = ['medicine', 'number', 'received_on', 'expires_on', 'received_quantity', 'remaining_quantity']
     search_fields = ['medicine__name', 'number']
+
+    @admin.display(description=gettext_lazy('Kirim soni'))
+    def received_quantity(self, obj):
+        opening = obj.placements.aggregate(n=Sum('opening_quantity', default=0))['n']
+        receipts = StockReceipt.objects.filter(placement__batch=obj).aggregate(n=Sum('quantity', default=0))['n']
+        return opening + receipts
+
+    @admin.display(description=gettext_lazy('Mavjud soni'))
+    def remaining_quantity(self, obj):
+        return obj.placements.aggregate(n=Sum('quantity', default=0))['n']
 
     def get_readonly_fields(self, request, obj=None):
         return ['medicine', 'number'] if obj else []
@@ -177,8 +189,8 @@ class ShiftAdmin(HistoryAdmin):
 
 @admin.register(Sale, site=site)
 class SaleAdmin(HistoryAdmin):
-    list_display = ['name', 'shift', 'quantity', 'total', 'created_at', 'cancelled_at']
-    list_filter = ['created_at', 'cancelled_at', 'shift__user']
+    list_display = ['name', 'shift', 'quantity', 'total', 'payment_method', 'created_at', 'cancelled_at']
+    list_filter = ['payment_method', 'created_at', 'cancelled_at', 'shift__user', 'shift']
     search_fields = ['name', 'shift__user__username']
     date_hierarchy = 'created_at'
     list_select_related = ['shift']
@@ -197,3 +209,33 @@ class TransferAdmin(HistoryAdmin):
     @admin.display(description=gettext_lazy('Yangi joy'))
     def destination_display(self, obj):
         return obj.destination_display
+
+
+from .models import StockReceipt
+from .services import receive_stock
+
+
+@admin.register(StockReceipt, site=site)
+class ReceiptAdmin(admin.ModelAdmin):
+    list_display = ['placement', 'quantity', 'received_on', 'user']
+    fields = ['placement', 'quantity', 'received_on']
+
+    def has_change_permission(self, request, obj=None):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+    def save_model(self, request, obj, form, change):
+        saved = receive_stock(request.user, obj.placement, obj.quantity, obj.received_on)
+        obj.pk = saved.pk
+        obj.user = request.user
+
+
+@admin.register(Placement, site=site)
+class LocationAdmin(HistoryAdmin):
+    def has_delete_permission(self, request, obj=None):
+        return request.user.is_superuser
+
+    list_display = ['medicine', 'batch', 'department', 'shelf', 'row', 'quantity']
+    search_fields = ['medicine__name', 'department', 'batch__number']

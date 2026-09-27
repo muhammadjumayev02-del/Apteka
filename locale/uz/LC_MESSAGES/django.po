@@ -1626,3 +1626,90 @@ msgstr "Partiya"
 
 msgid "Content Types"
 msgstr "Ma’lumot turlari"
+
+msgid "Ishlab chiqaruvchi shtrix kodi"
+msgstr "Ishlab chiqaruvchi shtrix kodi"
+
+msgid "Kelgan sana"
+msgstr "Kelgan sana"
+
+msgid "Chek raqami"
+msgstr "Chek raqami"
+
+msgid "Kirim soni"
+msgstr "Kirim soni"
+
+msgid "Kirim"
+msgstr "Kirim"
+
+msgid "Kirimlar"
+msgstr "Kirimlar"
+
+msgid "Boshlang‘ich qoldiq"
+msgstr "Boshlang‘ich qoldiq"
+
+msgid "Savat"
+msgstr "Savat"
+
+msgid "Savatga qo‘shish"
+msgstr "Savatga qo‘shish"
+
+msgid "Savatni tozalash"
+msgstr "Savatni tozalash"
+
+msgid "Savat bo‘sh yoki juda katta."
+msgstr "Savat bo‘sh yoki juda katta."
+
+msgid "Boshlanish sanasi"
+msgstr "Boshlanish sanasi"
+
+msgid "Tugash sanasi"
+msgstr "Tugash sanasi"
+
+msgid "Ko‘rish"
+msgstr "Ko‘rish"
+
+msgid "CSV yuklab olish"
+msgstr "CSV yuklab olish"
+
+msgid "Qoldiqni o‘zgartirish uchun kirim yoki sotuv amalidan foydalaning."
+msgstr "Qoldiqni o‘zgartirish uchun kirim yoki sotuv amalidan foydalaning."
+
+msgid "Shtrix kodni skanerlang yoki dori nomini yozing."
+msgstr "Shtrix kodni skanerlang yoki dori nomini yozing."
+
+msgid "Sotuv uchun smenani admin ochishi kerak."
+msgstr "Sotuv uchun smenani admin ochishi kerak."
+
+msgid "Enter a valid date."
+msgstr "To‘g‘ri sana kiriting."
+
+msgid "Noma’lum"
+msgstr "Noma’lum"
+
+msgid "Naqd pul"
+msgstr "Naqd pul"
+
+msgid "Bank kartasi"
+msgstr "Bank kartasi"
+
+msgid "To‘lov usuli"
+msgstr "To‘lov usuli"
+
+msgid "To‘lov usulini tanlang."
+msgstr "To‘lov usulini tanlang."
+
+msgid "Naqd pul tushumi"
+msgstr "Naqd pul tushumi"
+
+msgid "Umumiy tushum"
+msgstr "Umumiy tushum"
+
+msgid "Noma’lum to‘lovlar umumiy tushumga kiradi, naqd tushumga kirmaydi."
+msgstr "Noma’lum to‘lovlar umumiy tushumga kiradi, naqd tushumga kirmaydi."
+
+msgid "Sotuvlar soni chek bo‘yicha hisoblanadi."
+msgstr "Sotuvlar soni chek bo‘yicha hisoblanadi."
+
+msgid "Boshlang‘ich partiya"
+msgstr "Boshlang‘ich partiya"

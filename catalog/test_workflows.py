@@ -34,11 +34,11 @@ class WorkflowTests(TestCase):
         self.client.force_login(self.worker)
 
     def start(self):
-        self.client.post(reverse('catalog:shifts'), {'action': 'start'})
+        Shift.objects.get_or_create(user=self.worker, ended_at__isnull=True)
         return Shift.objects.get(user=self.worker, ended_at__isnull=True)
 
     def preview(self, quantity=2):
-        return self.client.post(reverse('catalog:sell', args=[self.med.pk]), {'placement': self.place.pk, 'quantity': quantity})
+        return self.client.post(reverse('catalog:sell', args=[self.med.pk]), {'placement': self.place.pk, 'quantity': quantity, 'payment_method': 'cash'})
 
     def confirm(self, token):
         return self.client.post(reverse('catalog:sale_confirm'), {'token': token})
@@ -100,14 +100,16 @@ class WorkflowTests(TestCase):
         self.confirm(token)
         self.assertFalse(Sale.objects.exists())
         token = self.preview().context['token']
-        self.client.post(reverse('catalog:shifts'), {'action': 'end'})
+        self.client.force_login(self.admin)
+        self.client.post(reverse('catalog:shifts'), {'action': 'end', 'shift': Shift.objects.get(user=self.worker, ended_at__isnull=True).pk})
+        self.client.force_login(self.worker)
         self.confirm(token)
         self.assertFalse(Sale.objects.exists())
         self.place.refresh_from_db()
         self.assertEqual(self.place.quantity, 10)
 
     def test_sale_requires_shift_package_and_positive_valid_stock(self):
-        self.assertContains(self.preview(), 'Avval smenani boshlang')
+        self.assertContains(self.preview(), 'Sotuv uchun smenani admin ochishi kerak.')
         self.start()
         for quantity in (0, -1, 11):
             self.assertTemplateUsed(self.preview(quantity), 'catalog/sell.html')
@@ -259,5 +261,6 @@ class PreservationMigrationTests(TransactionTestCase):
         self.assertEqual(Medicine.objects.get(pk=medicine_id).name, 'Old')
         preserved = Placement.objects.get(pk=place_id)
         self.assertEqual(preserved.quantity, 17)
+        self.assertEqual(preserved.opening_quantity, 17)
         self.assertEqual(preserved.department, 'Old shelf')
         self.assertEqual(preserved.batch.number, 'Boshlang‘ich partiya')
